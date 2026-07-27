@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 22/06/2026 to 14/08/2026
 
-![Le Nguyen Nhat Tam's profile picture](/images/avatar.png)
+![Le Nguyen Nhat Tam's profile picture](images/avatar.png)
 
 ### Report Content
 

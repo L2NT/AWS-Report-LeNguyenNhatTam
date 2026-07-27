@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 14/08/2026
 
-![Ảnh đại diện của Lê Nguyễn Nhật Tâm](/images/avatar.png)
+![Ảnh đại diện của Lê Nguyễn Nhật Tâm](images/avatar.png)
 
 
 
