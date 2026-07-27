@@ -6,12 +6,8 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **Amazon Web Services Vietnam Company Limited** (Workforce Bootcamp - First Cloud AI Journey program) from **22/06/2026** to **14/08/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
+I participated in building **Smart Docs AI**, a serverless document assistant powered by Retrieval-Augmented Generation (RAG) on AWS — covering user authentication (Cognito), data storage (S3, DynamoDB), the FastAPI/Lambda backend, Amazon Bedrock integration, and a full CodePipeline/CodeBuild/ECR CI/CD pipeline — through which I improved my skills in cloud architecture design, backend development, CI/CD automation, and technical documentation.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 
@@ -34,6 +30,6 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Manage AWS infrastructure costs more proactively during the active development phase, especially around CI/CD (CodePipeline/CodeBuild/ECR) usage  
+* Deepen my knowledge of optimizing RAG (Retrieval-Augmented Generation) pipelines for better answer quality  
+* Improve time management when working on multiple parts of the project in parallel

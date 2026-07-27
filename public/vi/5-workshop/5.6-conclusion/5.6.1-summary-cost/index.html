@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.163.0">
+    <meta name="generator" content="Hugo 0.164.0">
     <meta
   name="description"
   content=""
@@ -15,21 +15,21 @@
     <title>Tổng kết Workshop &amp; Chi phí :: Báo cáo thực tập</title>
 
     
-    <link href="/css/nucleus.css?1785117998" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1785117998" rel="stylesheet">
-    <link href="/css/hybrid.css?1785117998" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1785117998" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1785117998" rel="stylesheet">
-    <link href="/css/auto-complete.css?1785117998" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1785117998" rel="stylesheet">
-    <link href="/css/theme.css?1785117998" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1785117998" rel="stylesheet">
+    <link href="/css/nucleus.css?1785127032" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1785127032" rel="stylesheet">
+    <link href="/css/hybrid.css?1785127032" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1785127032" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1785127032" rel="stylesheet">
+    <link href="/css/auto-complete.css?1785127032" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1785127032" rel="stylesheet">
+    <link href="/css/theme.css?1785127032" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1785127032" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1785117998" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1785127032" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1785117998"></script>
+    <script src="/js/jquery-3.3.1.min.js?1785127032"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1785117998"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1785117998"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1785127032"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1785127032"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1785117998"></script>
+<script type="text/javascript" src="/js/search.js?1785127032"></script>
  
   </div>
 
@@ -1586,7 +1586,7 @@
 	</tbody>
 </table>
 <h3 id="so-sánh-với-chi-phí-dự-tính-ở-mục-2---đề-xuất">So sánh với chi phí dự tính ở mục 2 - Đề xuất</h3>
-<p>Ở <a href="/vi/2-proposal/">mục 2 - Đề xuất</a>, nhóm đã ước tính tổng chi phí hạ tầng hàng tháng vào khoảng <strong>$0.56 - $1.65 USD/tháng</strong>. Chi phí thực tế trong đúng 30 ngày là <strong>~$1.65/tháng</strong> — <strong>nằm sát ngay biên trên của khoảng đã dự tính ban đầu</strong>, cho thấy ước tính tổng thể khá chính xác.</p>
+<p>Ở <a href="/vi/2-proposal/">mục 2 - Đề xuất</a>, nhóm đã ước tính tổng chi phí hạ tầng hàng tháng vào khoảng <strong>$0.66 - $1.85 USD/tháng</strong>. Chi phí thực tế trong đúng 30 ngày là <strong>~$1.65/tháng</strong> — <strong>nằm trong khoảng đã dự tính ban đầu</strong>, cho thấy ước tính tổng thể khá chính xác.</p>
 <p>Tuy nhiên, khi so sánh chi tiết theo từng dịch vụ, cơ cấu chi phí thực tế lệch khá nhiều so với giả định ban đầu:</p>
 <table>
 	<thead>
@@ -1600,9 +1600,9 @@
 	<tbody>
 			<tr>
 					<td><strong>Amazon ECR</strong></td>
-					<td><em>(không có trong bảng ước tính)</em></td>
+					<td>$0.10 - $0.20</td>
 					<td>$0.5977</td>
-					<td><strong>Khoản chi lớn nhất thực tế nhưng bị bỏ sót hoàn toàn khi ước tính</strong> — mỗi lần CodePipeline chạy sẽ build &amp; push 1 Docker image mới lên ECR, các image cũ không tự xóa (chưa cấu hình lifecycle policy) nên dung lượng tích lũy dần theo thời gian</td>
+					<td><strong>Khoản chi lớn nhất thực tế</strong>, cao hơn ước tính đáng kể do đang trong giai đoạn phát triển với tần suất build/push liên tục, chưa phải giai đoạn vận hành ổn định</td>
 			</tr>
 			<tr>
 					<td><strong>CodePipeline &amp; CodeBuild</strong></td>
@@ -1648,7 +1648,7 @@
 			</tr>
 	</tbody>
 </table>
-<p><strong>Kết luận:</strong> Tổng chi phí thực tế khớp khá sát với ước tính ban đầu, nhưng <strong>CI/CD (CodePipeline + CodeBuild + ECR) mới là nhóm chi phí lớn nhất trong thực tế (~77% tổng chi phí)</strong> thay vì Bedrock/S3 như dự đoán ban đầu — điều này hợp lý vì đây là giai đoạn phát triển tích cực (nhiều lần build/deploy), không phải giai đoạn vận hành ổn định. Nếu đưa hệ thống lên production lâu dài, nên cấu hình <strong>ECR lifecycle policy</strong> để tự động xoá image cũ, tránh chi phí lưu trữ tích lũy không cần thiết.</p>
+<p><strong>Kết luận:</strong> Tổng chi phí thực tế khớp khá sát với ước tính ban đầu, nhưng <strong>CI/CD (CodePipeline + CodeBuild + ECR) mới là nhóm chi phí lớn nhất trong thực tế (~77% tổng chi phí)</strong> thay vì Bedrock/S3 như dự đoán ban đầu — điều này hợp lý vì đây là giai đoạn phát triển tích cực (nhiều lần build/deploy), không phải giai đoạn vận hành ổn định.</p>
 <hr>
 <p><strong>Ghi chú:</strong></p>
 <ul>
@@ -2723,19 +2723,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1785117998"></script>
-    <script src="/js/perfect-scrollbar.min.js?1785117998"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1785117998"></script>
-    <script src="/js/jquery.sticky.js?1785117998"></script>
-    <script src="/js/featherlight.min.js?1785117998"></script>
-    <script src="/js/highlight.pack.js?1785117998"></script>
+    <script src="/js/clipboard.min.js?1785127032"></script>
+    <script src="/js/perfect-scrollbar.min.js?1785127032"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1785127032"></script>
+    <script src="/js/jquery.sticky.js?1785127032"></script>
+    <script src="/js/featherlight.min.js?1785127032"></script>
+    <script src="/js/highlight.pack.js?1785127032"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1785117998"></script>
-    <script src="/js/learn.js?1785117998"></script>
-    <script src="/js/hugo-learn.js?1785117998"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1785127032"></script>
+    <script src="/js/learn.js?1785127032"></script>
+    <script src="/js/hugo-learn.js?1785127032"></script>
 
-    <link href="/mermaid/mermaid.css?1785117998" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1785117998"></script>
+    <link href="/mermaid/mermaid.css?1785127032" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1785127032"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
