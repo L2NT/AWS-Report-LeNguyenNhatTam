@@ -5,55 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tự động hóa việc dọn dẹp tài khoản Cognito chưa xác thực bằng Amazon EventBridge.
+* Thêm tính năng "Đăng nhập bằng Google" cho **Smart Docs AI**.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2-3 | - Tìm hiểu Amazon EventBridge Scheduled Rule <br> - Thiết kế cơ chế tự động xóa user Cognito ở trạng thái `UNCONFIRMED` sau 5 phút | 13/07/2026 | 14/07/2026 | |
+| 4 | - Triển khai EventBridge rule (`rate(1 minute)`) gọi Lambda <br> - Lambda phân nhánh theo `event.source == "aws.events"` để chạy `cleanup_unconfirmed_users()`, dùng `list_users(Filter=...)`, so sánh `UserCreateDate`, gọi `admin_delete_user` | 15/07/2026 | 15/07/2026 | |
+| 5 | - Test thực tế cơ chế cleanup (tạo user chưa xác thực, xác nhận bị xóa tự động sau ~6 phút) <br> - Rà soát chi phí phát sinh (gần như $0, nằm trong Free Tier) | 16/07/2026 | 16/07/2026 | |
+| 6 | - Nghiên cứu và cấu hình Google làm Identity Provider cho Cognito User Pool <br> - Thiết kế luồng OAuth redirect | 17/07/2026 | 17/07/2026 | |
+| 7 | - Code phần Frontend đăng nhập Google (`cognitoOAuth.js`, `GoogleCallbackPage.jsx`): xử lý redirect, đổi authorization code lấy token <br> - Test đăng nhập bằng Google thành công | 18/07/2026 | 18/07/2026 | |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Triển khai thành công EventBridge Scheduled Rule tự động dọn user Cognito chưa xác thực sau 5 phút, đã test thực tế và xác nhận hoạt động đúng; chi phí phát sinh gần như bằng 0.
+* Thêm thành công tính năng "Đăng nhập bằng Google" cho **Smart Docs AI**, tích hợp Cognito Google Identity Provider và luồng OAuth redirect ở Frontend.
 
 

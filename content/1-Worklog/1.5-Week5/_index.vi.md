@@ -5,55 +5,31 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tăng cường giám sát hệ thống bằng CloudWatch Alarms.
+* Tối ưu chi phí lưu trữ S3 và siết bảo mật (KMS cho DynamoDB, CSRF cho đăng nhập Google).
+* Thêm bước kiểm thử tự động (pytest) vào CodePipeline.
+* Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund".
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Thiết lập 4 CloudWatch Alarms (lambda-errors, lambda-duration, lambda-throttles, apigateway-5xx) + SNS Topic gửi cảnh báo qua email | 20/07/2026 | 20/07/2026 | |
+| 3 | - Bật S3 Intelligent-Tiering cho bucket lưu file người dùng để tự động tối ưu chi phí | 21/07/2026 | 21/07/2026 | |
+| 4 | - Thêm CSRF protection cho luồng đăng nhập Google: sinh `state = crypto.randomUUID()` lưu ở `sessionStorage`, xác minh bằng `verifyOAuthState()` khi callback | 22/07/2026 | 22/07/2026 | |
+| 5 | - Test 5 kịch bản CSRF (đăng nhập bình thường, state đúng định dạng, giả lập tấn công CSRF bị chặn ở tầng app, state đúng nhưng code giả bị Cognito chặn, state bị xóa sau khi dùng) <br> - Bật mã hóa KMS cho DynamoDB (đổi từ AWS owned key sang `alias/aws/dynamodb`) | 23/07/2026 | 23/07/2026 | |
+| 6 | - Thêm bước pytest vào `pre_build` của CodePipeline (`backend/buildspec.yml`): chạy `flake8` lint + `pytest test_*_unit.py` trước mỗi lần build/deploy | 24/07/2026 | 24/07/2026 | |
+| 7 | - Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund" | 25/07/2026 | 25/07/2026 | |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Triển khai 4 CloudWatch Alarms + SNS để chủ động phát hiện lỗi/hiệu năng bất thường thay vì chờ user report.
+* Bật S3 Intelligent-Tiering giúp tối ưu chi phí lưu trữ tài liệu người dùng.
+* Thêm CSRF protection 2 lớp cho luồng đăng nhập Google, đã test đầy đủ 5 kịch bản kể cả giả lập tấn công.
+* Bật mã hóa KMS cho bảng DynamoDB chứa profile người dùng, có đầy đủ audit trail qua CloudTrail.
+* Thêm bước pytest chạy trong CodePipeline (`pre_build`) - một lớp bảo mật/chất lượng mới trước khi build & deploy.
+* Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund" (25/07/2026) - xem chi tiết tại mục 4.2.
 
 

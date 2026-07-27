@@ -5,53 +5,28 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Build a proper user profile creation flow tied to email verification, avoiding leftover data for unconfirmed accounts.
+* Track down and fix a batch of bugs in the RAG pipeline and profile handling in **Smart Docs AI**.
+* Attend the "Cloud Architect x Meet Up" community event.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Mon-Tue | - Redesign the registration/verification flow: only create the DynamoDB profile **after** the user confirms their email (`sign_up` → `UNCONFIRMED` → `confirm-signup` → `admin_get_user` → create profile) <br> - Add `ensure_user_profile()` as a self-healing check on `GET /api/profile` | 06/07/2026 | 07/07/2026 | |
+| Wed | - Fix the multi-tenancy data leak: FAISS vector store path → `vectorstore/{user_id}/...`, S3 path → `uploads/{user_id}/{filename}`, removed the unsafe module-level global state | 08/07/2026 | 08/07/2026 | |
+| Thu | - Fix session tokens mixing across browser tabs (`localStorage` → `sessionStorage`, explicit `Storage` param on `CognitoUser`) <br> - Fix duplicate FAISS document IDs on the 2nd+ file upload (reset ids to `None` before `FAISS.from_documents()`) | 09/07/2026 | 09/07/2026 | |
+| Fri | - Fix CORS masking real 500 errors (added a global `exception_handler(Exception)`) <br> - Fix the file filter being ignored in Self-RAG/Co-RAG (added a `file_filter` param) <br> - Fix chat history duplication on follow-up questions | 10/07/2026 | 10/07/2026 | |
+| Sat | - Fix the profile update 400 error (use email instead of `sub` as the Cognito Username) <br> - Attend the "Cloud Architect x Meet Up" event | 11/07/2026 | 11/07/2026 | |
 
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Shipped the new profile creation flow: DynamoDB only stores a profile after the user verifies their email, avoiding orphaned "unconfirmed" user records, with a self-healing check (`ensure_user_profile`) for race conditions.
+* Fully fixed the multi-tenancy data leak between users by properly isolating both the FAISS vector store and S3 by `user_id`.
+* Fixed the cross-tab session token mixing bug and the duplicate document ID bug on multi-file uploads.
+* Fixed CORS masking real 500 errors, making backend debugging far easier.
+* Fixed the ignored file filter in Self-RAG/Co-RAG and the chat history duplication bug on follow-up questions.
+* Fixed the profile update 400 error caused by using the wrong user identifier.
+* Attended the "Cloud Architect x Meet Up" event (11/07/2026) - see section 4.1 for details.

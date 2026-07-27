@@ -6,120 +6,48 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Cloud Architect x Meet Up
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tạo một không gian thoải mái để các cloud architect, kỹ sư và người đang học AWS trao đổi kinh nghiệm thực tế
+- Giới thiệu AWS Security Agent và nhấn mạnh vì sao bảo mật ngày càng quan trọng trong thời buổi "vibe code"
+- Chia sẻ mẹo và tâm lý thi các chứng chỉ AWS
+- Kết nối cộng đồng AWS Study Group / cloud qua những buổi gặp gỡ thân mật
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Anh Long** – Security Solutions Architect, showcase **AWS Security Agent** (một service chính thức của AWS) và chia sẻ vì sao bảo mật hệ thống lại quan trọng đến vậy ở thời điểm hiện tại
+- **Anh Huy** – AWS Certified Solutions Architect, chia sẻ kinh nghiệm thi chứng chỉ từ hành trình của chính anh
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Showcase AWS Security Agent (Anh Long)
+- AWS Security Agent quét tài khoản AWS để tìm các lỗi cấu hình phổ biến (IAM policy quá lỏng lẻo, resource public không cần thiết, v.v.) và chỉ ra những điểm cần lưu ý.
+- Điểm đáng nhớ nhất: trong thời buổi "vibe code" — khi code được AI tạo ra hoặc copy-paste mà không ai đọc kỹ — lỗ hổng bảo mật rất dễ lọt vào hệ thống, nên việc có công cụ luôn để mắt đến bảo mật càng quan trọng hơn.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Mẹo thi chứng chỉ AWS (Anh Huy)
+- Đề thi hoàn toàn là trắc nghiệm theo tình huống — không phải code, nhưng phải suy luận xem dịch vụ AWS nào thực sự phù hợp với tình huống được nêu.
+- Mẹo khá đời thường nhưng hữu ích: phòng thi thường rất lạnh, nên mang theo áo khoác nếu không muốn bị phân tâm giữa chừng.
+- Anh cũng chia sẻ về cách quản lý thời gian làm bài — đánh dấu câu chưa chắc để quay lại sau thay vì ngồi "cắn" một câu quá lâu.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
-
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
-
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
-
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+#### Giao lưu ngắn cuối buổi
+- Sau hai phần chia sẻ, mọi người có thời gian tự do trao đổi — người vừa thi đậu chứng chỉ và người đang ôn thi trao đổi tài liệu ôn tập, khá thoải mái để kết thúc buổi sáng.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Bảo mật không thể "để sau" khi rất nhiều code hiện nay được viết theo kiểu "vibe code" thay vì tự tay review từng dòng.
+- Một service chính thức như AWS Security Agent thật sự hữu ích để bắt những lỗi mà không ai kiểm tra thủ công.
+- Ôn thi chứng chỉ cũng cần chiến lược làm bài (thời gian, dạng câu hỏi), và những buổi meetup nhỏ như thế này dễ đặt câu hỏi hơn hẳn hội thảo lớn.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- Thêm KMS cho DynamoDB (trước đó chưa có customer-managed key) và biến key này thành một deployment variable để dễ đổi theo từng môi trường.
+- Thêm bước pytest chạy ở `pre_build` trong CodePipeline, để test chặn mọi bản build trước khi lên production — một lớp bảo mật mà trước đây chưa hề có.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+Đây là một buổi meetup nhỏ, thân mật vào buổi sáng chứ không phải hội thảo lớn, nên dễ trò chuyện trực tiếp hơn — mình hỏi anh Long vài câu về việc "vibe code" đã thay đổi cách anh review bảo mật hàng ngày như thế nào. Mẹo thi của anh Huy cũng là kinh nghiệm thực tế mà tài liệu chính thức không ghi. Mình rời buổi đó với vài việc cụ thể cần kiểm tra lại trong hệ thống.
 
 #### Một số hình ảnh khi tham gia sự kiện
 * Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

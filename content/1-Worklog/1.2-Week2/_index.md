@@ -5,53 +5,28 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Refine/refactor the Smart Docs AI frontend.
+* Study Amazon S3 (bucket/object management, static website hosting, CloudFront).
+* Study Amazon RDS and EC2 Auto Scaling for application scalability.
+* Get familiar with KMS and Amazon Cognito ahead of building the backend authentication.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Mon-Tue | - Refactor the Smart Docs AI frontend <br> - Study Amazon S3: buckets/objects, static website hosting, blocking/allowing public access <br> - **Practice:** enable CloudFront in front of the static site | 29/06/2026 | 30/06/2026 | [Amazon S3 Guide](https://000057.awsstudygroup.com/vi/) |
+| Wed | - Study Amazon RDS & Aurora concepts <br> - Read up on RDS deployment, backup, and restore | 01/07/2026 | 01/07/2026 | [Amazon RDS Guide](https://000005.awsstudygroup.com/vi/) |
+| Thu | - Study EC2 Auto Scaling: Auto Scaling Group, Launch Template, Elastic Load Balancer, Target Group <br> - Overview of EFS/FSx/Lightsail | 02/07/2026 | 02/07/2026 | [EC2 Auto Scaling](https://000006.awsstudygroup.com/vi/) |
+| Fri | - Study AWS KMS (encryption keys) and Amazon Cognito (user pools, sign-up/sign-in flow) to prep for the project's backend auth work | 03/07/2026 | 03/07/2026 | [Amazon Cognito](https://000081.awsstudygroup.com/vi/) |
+| Sat | - Finalize and update the Worklog for Week 1 and Week 2 <br> - Sync all source code and docs to GitHub | 04/07/2026 | 04/07/2026 | Personal GitHub Repository |
 
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Refactored the Smart Docs AI frontend, improving layout and user experience.
+* Understood how Amazon S3 works: creating/managing buckets, uploading objects, static website hosting, and integrating CloudFront.
+* Built a solid foundation in Amazon RDS: operations, backup, and restore.
+* Understood how to scale applications with EC2 Auto Scaling (Auto Scaling Groups, Launch Templates, ELB, Target Groups).
+* Got familiar with KMS (key management) and Amazon Cognito (user pools, sign-up/sign-in flow) - the foundation for the project's authentication work in later weeks.
+* Completed and synced the Week 1 and Week 2 Worklogs to GitHub.
