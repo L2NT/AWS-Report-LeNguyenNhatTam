@@ -60,4 +60,7 @@ Bug multi-tenancy là một trong những lớp lỗi khó phát hiện nhất t
 ## Link bài viết
 https://aws.amazon.com/blogs/compute/building-multi-tenant-saas-applications-with-aws-lambdas-new-tenant-isolation-mode/
 
+## Link bài đã đăng trong AWS Study Group
+https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226685264763100/
+
 ...Hướng dẫn...

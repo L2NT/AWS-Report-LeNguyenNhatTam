@@ -50,3 +50,6 @@ EventBridge Scheduler là một nâng cấp thực sự mạnh mẽ so với Eve
 
 ## Link bài viết
 https://aws.amazon.com/blogs/compute/introducing-amazon-eventbridge-scheduler/
+
+## Link bài đã đăng trong AWS Study Group
+https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226683848096575/

@@ -71,4 +71,7 @@ Cold start không phải là bug, mà là đặc tính cố hữu của kiến t
 ## Link bài viết
 https://aws.amazon.com/blogs/compute/operating-lambda-performance-optimization-part-1/
 
+## Link bài đã đăng trong AWS Study Group
+https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226685044763122/
+
 ...Hướng dẫn...
