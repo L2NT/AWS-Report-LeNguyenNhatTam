@@ -17,19 +17,21 @@ pre: " <b> 4.1. </b> "
 
 ### Danh Sách Diễn Giả
 
-- **Anh Long** – Security Solutions Architect, showcase **AWS Security Agent** (một service chính thức của AWS) và chia sẻ vì sao bảo mật hệ thống lại quan trọng đến vậy ở thời điểm hiện tại
+- **Anh Long** – Security Solutions Architect, showcase **AWS Security Agent** (một service chính thức của AWS) và chia sẻ vì sao bảo mật hệ thống lại rất quan trọng ở thời điểm hiện tại
 - **Anh Huy** – AWS Certified Solutions Architect, chia sẻ kinh nghiệm thi chứng chỉ từ hành trình của chính anh
 
 ### Nội Dung Nổi Bật
 
 #### Showcase AWS Security Agent (Anh Long)
-- AWS Security Agent quét tài khoản AWS để tìm các lỗi cấu hình phổ biến (IAM policy quá lỏng lẻo, resource public không cần thiết, v.v.) và chỉ ra những điểm cần lưu ý.
+- AWS Security Agent quét toàn bộ project để tìm đủ mọi loại lỗ hổng bảo mật (không chỉ riêng lỗi cấu hình account như IAM policy lỏng lẻo hay resource public), thể hiện toàn bộ kết quả qua giao diện trực quan (dashboard) thay vì log thô.
+- Agent còn tự động xuất ra một báo cáo PDF đầy đủ, giúp team có ngay tài liệu để chia sẻ/xử lý mà không cần tự tổng hợp lại kết quả quét.
 - Điểm đáng nhớ nhất: trong thời buổi "vibe code" — khi code được AI tạo ra hoặc copy-paste mà không ai đọc kỹ — lỗ hổng bảo mật rất dễ lọt vào hệ thống, nên việc có công cụ luôn để mắt đến bảo mật càng quan trọng hơn.
 
 #### Mẹo thi chứng chỉ AWS (Anh Huy)
 - Đề thi hoàn toàn là trắc nghiệm theo tình huống — không phải code, nhưng phải suy luận xem dịch vụ AWS nào thực sự phù hợp với tình huống được nêu.
 - Mẹo khá đời thường nhưng hữu ích: phòng thi thường rất lạnh, nên mang theo áo khoác nếu không muốn bị phân tâm giữa chừng.
-- Anh cũng chia sẻ về cách quản lý thời gian làm bài — đánh dấu câu chưa chắc để quay lại sau thay vì ngồi "cắn" một câu quá lâu.
+- Anh cũng chia sẻ về cách quản lý thời gian làm bài: nếu một câu mất quá nhiều thời gian mà vẫn chưa ra thì nên bỏ qua làm câu tiếp theo trước — đôi khi các câu phía sau lại vô tình gợi ý (thậm chí lộ luôn) đáp án cho câu trước đó. Giao diện bài thi có sẵn tính năng đánh flag để đánh dấu những câu chưa chắc, rồi quay lại xem toàn bộ các câu đã đánh flag sau khi làm hết bài.
+- Anh cũng chia sẻ thêm là không phải câu nào cũng là trắc nghiệm 1 đáp án đúng như bình thường — có dạng câu "multiple response", yêu cầu chọn từ 2 đáp án đúng trở lên trong số 5 lựa chọn trở lên, nên cần để ý kỹ đề bài yêu cầu chọn bao nhiêu đáp án trước khi nộp.
 
 #### Giao lưu ngắn cuối buổi
 - Sau hai phần chia sẻ, mọi người có thời gian tự do trao đổi — người vừa thi đậu chứng chỉ và người đang ôn thi trao đổi tài liệu ôn tập, khá thoải mái để kết thúc buổi sáng.

@@ -23,13 +23,15 @@ pre: " <b> 4.1. </b> "
 ### Key Highlights
 
 #### AWS Security Agent showcase (Anh Long)
-- AWS Security Agent scans an account for common misconfigurations (loose IAM policies, publicly exposed resources, etc.) and surfaces findings the team can act on.
+- AWS Security Agent scans an entire project to catch a wide range of security vulnerabilities, not just account-level misconfigurations — surfacing every finding through a visual dashboard instead of raw logs.
+- It also auto-generates a full PDF report of everything it finds, so the team has something shareable to act on without manually compiling results.
 - The real point of the talk: in the "vibe coding" era, where a lot of code is AI-generated or pasted in without a full read-through, insecure defaults slip in more easily — so having something actively watching for that matters more than ever.
 
 #### AWS Certification tips (Anh Huy)
 - The exam is fully scenario-based multiple choice — no coding, but you need to reason through which AWS service actually fits the situation described.
 - Practical (and slightly random) tip: exam rooms are almost always freezing, so bring a jacket if you don't want to be distracted halfway through.
-- He also touched on time management during the exam — flagging uncertain questions and coming back at the end instead of getting stuck.
+- He also touched on time management during the exam: if a question is taking too long, skip it and keep moving — later questions sometimes hint at, or even give away, the answer to one you were stuck on earlier. The exam interface has a flag feature for exactly this, letting you mark uncertain questions and jump straight back to all of them once you've gone through the whole exam.
+- He also pointed out that not every question is a standard single-answer multiple choice — some are "multiple response" questions, where you have to pick two or more correct answers out of five or more options, so it's worth checking how many answers a question expects before submitting.
 
 #### Quick networking round
 - After the two talks, there was some open floor time where people who'd just gotten certified or were mid-prep swapped study resources and war stories — a nice, low-pressure way to end the morning.
