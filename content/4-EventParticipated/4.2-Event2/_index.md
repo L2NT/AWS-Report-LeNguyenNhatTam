@@ -69,4 +69,4 @@ pre: " <b> 4.2. </b> "
 This was the closing/demo day of a hackathon rather than a talk-style event, so most of the day was four teams pitching back-to-back, followed by an open retrospective on what the 24 hours were actually like. I mostly sat and watched the demos and Q&A — the AML workflow engine and the SA architecture assistant were the two that stuck with me most, since both leaned heavily on human-in-the-loop design instead of trying to automate everything end to end.
 
 #### Some event photos
-*Photos go in `static/images/4-EventParticipated/4.2-Event2/` — once added, reference them here like `![](/images/4-EventParticipated/4.2-Event2/your-photo.jpg)`.*
+![Event 2 photo](/images/4-EventParticipated/4.2-Event2/Event-25-07-2026.png)
