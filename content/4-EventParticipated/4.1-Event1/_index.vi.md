@@ -23,7 +23,7 @@ pre: " <b> 4.1. </b> "
 ### Nội Dung Nổi Bật
 
 #### Showcase AWS Security Agent (Anh Long)
-- AWS Security Agent quét toàn bộ project để tìm đủ mọi loại lỗ hổng bảo mật (không chỉ riêng lỗi cấu hình account như IAM policy lỏng lẻo hay resource public), thể hiện toàn bộ kết quả qua giao diện trực quan (dashboard) thay vì log thô.
+- AWS Security Agent quét toàn bộ project từ đầu đến cuối, phát hiện nhiều loại lỗ hổng hơn hẳn lỗi cấu hình account thông thường — như secret/API key bị hardcode trong code, dependency lỗi thời có CVE đã biết, S3 bucket bị public hay security group mở quá rộng, thiếu mã hoá dữ liệu khi lưu trữ/truyền tải, và cả các lỗi ở tầng code như injection — rồi thể hiện toàn bộ kết quả qua giao diện trực quan (dashboard) thay vì log thô.
 - Agent còn tự động xuất ra một báo cáo PDF đầy đủ, giúp team có ngay tài liệu để chia sẻ/xử lý mà không cần tự tổng hợp lại kết quả quét.
 - Điểm đáng nhớ nhất: trong thời buổi "vibe code" — khi code được AI tạo ra hoặc copy-paste mà không ai đọc kỹ — lỗ hổng bảo mật rất dễ lọt vào hệ thống, nên việc có công cụ luôn để mắt đến bảo mật càng quan trọng hơn.
 
@@ -33,14 +33,11 @@ pre: " <b> 4.1. </b> "
 - Anh cũng chia sẻ về cách quản lý thời gian làm bài: nếu một câu mất quá nhiều thời gian mà vẫn chưa ra thì nên bỏ qua làm câu tiếp theo trước — đôi khi các câu phía sau lại vô tình gợi ý (thậm chí lộ luôn) đáp án cho câu trước đó. Giao diện bài thi có sẵn tính năng đánh flag để đánh dấu những câu chưa chắc, rồi quay lại xem toàn bộ các câu đã đánh flag sau khi làm hết bài.
 - Anh cũng chia sẻ thêm là không phải câu nào cũng là trắc nghiệm 1 đáp án đúng như bình thường — có dạng câu "multiple response", yêu cầu chọn từ 2 đáp án đúng trở lên trong số 5 lựa chọn trở lên, nên cần để ý kỹ đề bài yêu cầu chọn bao nhiêu đáp án trước khi nộp.
 
-#### Giao lưu ngắn cuối buổi
-- Sau hai phần chia sẻ, mọi người có thời gian tự do trao đổi — người vừa thi đậu chứng chỉ và người đang ôn thi trao đổi tài liệu ôn tập, khá thoải mái để kết thúc buổi sáng.
-
 ### Những Gì Học Được
 
-- Bảo mật không thể "để sau" khi rất nhiều code hiện nay được viết theo kiểu "vibe code" thay vì tự tay review từng dòng.
-- Một service chính thức như AWS Security Agent thật sự hữu ích để bắt những lỗi mà không ai kiểm tra thủ công.
-- Ôn thi chứng chỉ cũng cần chiến lược làm bài (thời gian, dạng câu hỏi), và những buổi meetup nhỏ như thế này dễ đặt câu hỏi hơn hẳn hội thảo lớn.
+- Bảo mật không thể "để sau" khi rất nhiều code hiện nay được viết theo kiểu "vibe code" thay vì tự tay review từng dòng — lỗ hổng có thể ẩn ở bất cứ đâu, từ secret bị hardcode đến dependency lỗi thời, chứ không chỉ là lỗi cấu hình account.
+- Một service chính thức như AWS Security Agent thật sự hữu ích để bắt những lỗi mà không ai kiểm tra thủ công, và việc đóng gói kết quả thành dashboard cùng báo cáo PDF tự động giúp dễ hành động hơn nhiều.
+- Ôn thi chứng chỉ cũng cần chiến lược làm bài — biết khi nào nên bỏ qua và đánh flag câu khó, để ý dạng câu multiple response — chứ không chỉ là nắm vững kiến thức dịch vụ, và những buổi meetup nhỏ như thế này dễ đặt câu hỏi hơn hẳn hội thảo lớn.
 
 ### Ứng Dụng Vào Công Việc
 
@@ -49,7 +46,7 @@ pre: " <b> 4.1. </b> "
 
 ### Trải nghiệm trong event
 
-Đây là một buổi meetup nhỏ, thân mật vào buổi sáng chứ không phải hội thảo lớn, nên dễ trò chuyện trực tiếp hơn — mình hỏi anh Long vài câu về việc "vibe code" đã thay đổi cách anh review bảo mật hàng ngày như thế nào. Mẹo thi của anh Huy cũng là kinh nghiệm thực tế mà tài liệu chính thức không ghi. Mình rời buổi đó với vài việc cụ thể cần kiểm tra lại trong hệ thống.
+Đây là một buổi meetup nhỏ, thân mật vào buổi sáng chứ không phải hội thảo lớn, nên dễ trò chuyện trực tiếp hơn — mình hỏi thêm anh Long về những loại lỗ hổng mà AWS Security Agent phát hiện được ngoài lỗi cấu hình thông thường, và báo cáo PDF tự động đó thực tế được dùng như thế nào sau khi quét xong. Mẹo thi của anh Huy — nhất là chiến lược đánh flag và lưu ý về dạng câu multiple response — cũng là kinh nghiệm thực tế mà tài liệu chính thức không ghi. Mình rời buổi đó với vài việc cụ thể cần kiểm tra lại trong hệ thống.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
+*Ảnh sẽ được đặt trong `static/images/4-EventParticipated/4.1-Event1/` — sau khi thêm ảnh, chèn vào đây theo dạng `![](/images/4-EventParticipated/4.1-Event1/ten-anh.jpg)`.*

@@ -23,7 +23,7 @@ pre: " <b> 4.1. </b> "
 ### Key Highlights
 
 #### AWS Security Agent showcase (Anh Long)
-- AWS Security Agent scans an entire project to catch a wide range of security vulnerabilities, not just account-level misconfigurations — surfacing every finding through a visual dashboard instead of raw logs.
+- AWS Security Agent scans an entire project end-to-end for a much broader range of issues than typical account-level misconfigurations — hardcoded secrets and API keys left in code, outdated dependencies with known CVEs, exposed S3 buckets and overly open security groups, missing encryption at rest/in transit, and common code-level risks like injection flaws — then surfaces every finding through a visual dashboard instead of raw logs.
 - It also auto-generates a full PDF report of everything it finds, so the team has something shareable to act on without manually compiling results.
 - The real point of the talk: in the "vibe coding" era, where a lot of code is AI-generated or pasted in without a full read-through, insecure defaults slip in more easily — so having something actively watching for that matters more than ever.
 
@@ -33,14 +33,11 @@ pre: " <b> 4.1. </b> "
 - He also touched on time management during the exam: if a question is taking too long, skip it and keep moving — later questions sometimes hint at, or even give away, the answer to one you were stuck on earlier. The exam interface has a flag feature for exactly this, letting you mark uncertain questions and jump straight back to all of them once you've gone through the whole exam.
 - He also pointed out that not every question is a standard single-answer multiple choice — some are "multiple response" questions, where you have to pick two or more correct answers out of five or more options, so it's worth checking how many answers a question expects before submitting.
 
-#### Quick networking round
-- After the two talks, there was some open floor time where people who'd just gotten certified or were mid-prep swapped study resources and war stories — a nice, low-pressure way to end the morning.
-
 ### Key Takeaways
 
-- Security can't be an afterthought when so much code today is "vibe coded" instead of reviewed line by line.
-- A dedicated service like AWS Security Agent is genuinely useful for catching what nobody's manually checking.
-- Exam prep is as much about strategy (time, question format) as it is about knowing the services, and smaller meetups make it easier to ask questions than a big seminar does.
+- Security can't be an afterthought when so much code today is "vibe coded" instead of reviewed line by line — vulnerabilities can hide anywhere from hardcoded secrets to outdated dependencies, not just account misconfigurations.
+- A dedicated service like AWS Security Agent is genuinely useful for catching what nobody's manually checking, and packaging results into a dashboard plus an auto-generated PDF report makes it much easier to actually act on.
+- Exam prep is as much about strategy — skipping and flagging tough questions, watching out for multiple-response formats — as it is about knowing the services, and smaller meetups make it easier to ask questions than a big seminar does.
 
 ### Applying to Work
 
@@ -49,7 +46,7 @@ pre: " <b> 4.1. </b> "
 
 ### Event Experience
 
-This was a small, low-key morning meetup rather than a big conference, which made it easier to actually talk to people — I got to ask Anh Long how much "vibe coding" has changed his day-to-day security reviews. Anh Huy's certification tips were the practical kind you don't really get from official docs. I left with concrete things to check in our own setup.
+This was a small, low-key morning meetup rather than a big conference, which made it easier to actually talk to people — I got to ask Anh Long more about the range of issues AWS Security Agent catches beyond simple misconfigurations, and how the auto-generated PDF report actually gets used afterward. Anh Huy's certification tips — especially the flagging strategy and the heads-up about multiple-response questions — were the practical kind you don't really get from official docs. I left with concrete things to check in our own setup.
 
 #### Some event photos
-*Add your event photos here*
+*Photos go in `static/images/4-EventParticipated/4.1-Event1/` — once added, reference them here like `![](/images/4-EventParticipated/4.1-Event1/your-photo.jpg)`.*
