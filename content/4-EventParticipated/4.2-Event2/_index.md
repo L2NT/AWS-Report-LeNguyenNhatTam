@@ -6,121 +6,67 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Agentic AI Build Week powered by GenAI Fund
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Wrap up a large-scale hackathon (FCAJ x Agentic AI Build Week) with multiple competing teams (2K, Six Piller, One Team, Long & Co, and others)
+- Give teams a stage to demo and pitch their Agentic AI products built on AWS
+- Share hard-earned lessons from a 24-hour hackathon sprint — teamwork, pitching, and technical war stories
+- Help participants walk away with portfolio-worthy projects and connections in the AWS Study Group community
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **One Team** – built a Zalo-style chatbot for food ordering, focused on a non-tech-friendly conversational UI
+- **Long & Co** – built an AI assistant for Solution Architects that turns natural-language requirements into architecture diagrams, cost estimates, and deployable IaC
+- **Nhóm 2K** – built a real-time crowd-monitoring system using computer vision and an agentic AI copilot
+- **Six Piller** – built an Adaptive Workflow Engine for anti-money-laundering (AML) case triage
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### One Team – conversational food-ordering chatbot
+- Skipped a full app in favor of a minimal, Zalo-like chat interface so non-tech users don't have to learn new navigation.
+- Used natural-language prompts instead of menu buttons, letting the AI infer intent directly from what the user types — no account registration needed.
+- Demoed against a simulated enterprise dataset (an FPT-style scenario) to show the agent could query structured business data (tax codes, quarterly revenue) and surface suggestions.
+- Team's biggest takeaway: no matter how advanced the tech, it has to stay bounded by the actual business requirement — and shipping an MVP to production beats polishing a theory.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### Long & Co – AI assistant for Solution Architects
+- Tackles a real pain point for SAs: designing architecture, estimating cost, and deploying — sometimes in a single evening — while hand-drawn Draw.io diagrams and manually written IaC eat up all the time.
+- Workflow: natural-language request + internal docs → AI drafts an architecture diagram → estimates AWS pricing → generates Terraform/CloudFormation → a human reviews and approves → the system deploys.
+- The hard part, per the team, wasn't the diagram generation — it was managing the AI's context/memory so the architecture stayed consistent with internal rules (e.g., "Lambda must sit inside a VPC") and validating output against an allowed-services list on every run.
+- Kept scope to a provable proof-of-concept with a step-by-step UI so judges could watch the agent's reasoning in real time.
 
-#### Transitioning to modern application architecture – Microservices
+#### Nhóm 2K – real-time crowd monitoring
+- Pipeline: camera feeds into Amazon Kinesis Video Streams → AWS Fargate containers run YOLO for people detection and ByteTrack for tracking (so people aren't double-counted or missed) → density data lands in DynamoDB and S3.
+- An agentic layer (Bedrock + OpenAI) lets operators query the system in plain language for a summary of an area or staffing suggestions.
+- Standout feature: operators can draw custom "zones" on the camera feed (e.g., boarding gates, checkout lines), and the system flags color-coded alerts once a zone's density crosses a threshold.
+- Biggest technical headaches were network stability for real-time video processing and needing a fixed, elevated camera angle for accurate zone counting.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Six Piller – AML Adaptive Workflow Engine
+- Aims to replace a manual review process that costs roughly $20–$25 and about 3 hours per case, and that burns out analysts.
+- Three-layer pipeline: Layer 1 does fast risk scoring (0–1) on live transactions via Kinesis Data Streams + XGBoost on Amazon Bedrock; Layer 2 uses AWS Step Functions to orchestrate specialized agents (KYC, transaction analysis, evidence-building) that compile an evidence file; Layer 3 buckets the case as Hold, Dismiss, or Escalate to a human.
+- Design philosophy: AI is a "right hand," not a replacement, given how sensitive financial decisions are — every step of the agent's reasoning and evidence is logged for auditability, and the system lets one analyst handle far more cases than before.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### Lessons from the 24-hour hackathon sprint
+- Teamwork mattered more than any single line of code — teams that split roles clearly (backend, frontend, research, presenter) and dropped individual ego moved faster.
+- Judges asking a lot of questions during pitching is actually a good sign — it means they're engaged; framing the pitch around a real pain point (not just cool tech) helped teams stand out.
+- War stories included infra hiccups, accidentally pushing a `.env` file to GitHub, running on little sleep, and scrambling when the network died mid live-demo.
+- The organizers' closing message: don't over-index on winning — the real value is the experience (networking, learning new tools, testing your own limits), and these projects double as solid portfolio pieces for future job applications.
 
 ### Key Takeaways
 
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Across very different domains (food ordering, cloud architecture, computer vision, AML), the common thread was starting from a real pain point instead of leading with the technology.
+- Agentic AI patterns kept showing up: an orchestration layer (Step Functions or similar) coordinating specialized agents, human-in-the-loop checkpoints before anything risky happens, and context/memory management to keep AI output consistent.
+- A hackathon is as much a lesson in teamwork and time pressure as it is a coding exercise — some of the sharpest advice came from the "what went wrong" retrospectives, not the demos themselves.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Consider adding a human-in-the-loop approval step before any AI-driven action that changes infrastructure or makes a financial/security decision, similar to Long & Co's and Six Piller's designs.
+- Look into an orchestration pattern (like Step Functions) for coordinating multiple specialized agents instead of building one large, do-everything agent.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+This was the closing/demo day of a hackathon rather than a talk-style event, so most of the day was four teams pitching back-to-back, followed by an open retrospective on what the 24 hours were actually like. I mostly sat and watched the demos and Q&A — the AML workflow engine and the SA architecture assistant were the two that stuck with me most, since both leaned heavily on human-in-the-loop design instead of trying to automate everything end to end.
 
 #### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+*Photos go in `static/images/4-EventParticipated/4.2-Event2/` — once added, reference them here like `![](/images/4-EventParticipated/4.2-Event2/your-photo.jpg)`.*
