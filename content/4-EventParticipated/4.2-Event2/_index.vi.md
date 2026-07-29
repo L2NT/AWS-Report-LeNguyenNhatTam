@@ -58,11 +58,13 @@ pre: " <b> 4.2. </b> "
 - Dù thuộc các lĩnh vực rất khác nhau (đặt đồ ăn, kiến trúc cloud, computer vision, AML), điểm chung là các đội đều xuất phát từ một pain point thực tế thay vì chạy theo công nghệ trước.
 - Pattern agentic AI lặp lại nhiều lần: một lớp điều phối (như Step Functions) quản lý các agent chuyên trách, có bước con người duyệt (human-in-the-loop) trước khi làm gì rủi ro, và phải quản lý context/memory để output AI nhất quán.
 - Một hackathon dạy về teamwork và áp lực thời gian không kém gì kỹ thuật — nhiều lời khuyên hay nhất lại đến từ phần "chia sẻ điều gì đã sai" hơn là từ chính phần demo.
+- Phải biết điểm dừng — là người develop nên lúc nào cũng muốn thêm tính năng mới, nâng cấp, làm cho nó tốt hơn, nhưng thời gian thì luôn có hạn, nên biết khi nào nên ngừng lại cũng quan trọng không kém việc biết xây dựng tính năng đó.
 
 ### Ứng Dụng Vào Công Việc
 
 - Cân nhắc thêm bước con người duyệt (human-in-the-loop) trước khi để AI tự thực hiện hành động ảnh hưởng đến hạ tầng hoặc ra quyết định tài chính/bảo mật, giống cách Long & Co và Six Piller thiết kế.
 - Tìm hiểu pattern điều phối (như Step Functions) để quản lý nhiều agent chuyên trách thay vì làm một agent to ôm hết mọi việc.
+- Cân nhắc thời hạn nộp workshop sắp đến hạn, nên bây giờ không thêm tính năng mới nữa, mà tập trung hoàn thiện, chỉnh sửa và làm tốt hơn đối với những tính năng đã có.
 
 ### Trải nghiệm trong event
 

@@ -58,11 +58,13 @@ pre: " <b> 4.2. </b> "
 - Across very different domains (food ordering, cloud architecture, computer vision, AML), the common thread was starting from a real pain point instead of leading with the technology.
 - Agentic AI patterns kept showing up: an orchestration layer (Step Functions or similar) coordinating specialized agents, human-in-the-loop checkpoints before anything risky happens, and context/memory management to keep AI output consistent.
 - A hackathon is as much a lesson in teamwork and time pressure as it is a coding exercise — some of the sharpest advice came from the "what went wrong" retrospectives, not the demos themselves.
+- Know when to stop — as a developer I always want to add one more feature or polish things further, but time is limited, and knowing when to stop scope-creeping matters just as much as building the feature in the first place.
 
 ### Applying to Work
 
 - Consider adding a human-in-the-loop approval step before any AI-driven action that changes infrastructure or makes a financial/security decision, similar to Long & Co's and Six Piller's designs.
 - Look into an orchestration pattern (like Step Functions) for coordinating multiple specialized agents instead of building one large, do-everything agent.
+- With the workshop submission deadline coming up, hold off on adding new features for now and focus on polishing, fixing, and improving what's already built.
 
 ### Event Experience
 
