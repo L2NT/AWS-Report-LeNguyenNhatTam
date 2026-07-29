@@ -17,6 +17,8 @@ pre: " <b> 4.1. </b> "
 
 ### Speakers
 
+The meetup featured four speakers in total; the two sessions below are the ones covered in detail here:
+
 - **Anh Long** – Security Solutions Architect, showcased **AWS Security Agent**, an actual AWS service, and talked about why security posture matters so much right now
 - **Anh Huy** – AWS Certified Solutions Architect, shared exam-taking tips from his own certification journey
 
@@ -37,7 +39,7 @@ pre: " <b> 4.1. </b> "
 
 - Security can't be an afterthought when so much code today is "vibe coded" instead of reviewed line by line — vulnerabilities can hide anywhere from hardcoded secrets to outdated dependencies, not just account misconfigurations.
 - A dedicated service like AWS Security Agent is genuinely useful for catching what nobody's manually checking, and packaging results into a dashboard plus an auto-generated PDF report makes it much easier to actually act on.
-- Exam prep is as much about strategy — skipping and flagging tough questions, watching out for multiple-response formats — as it is about knowing the services, and smaller meetups make it easier to ask questions than a big seminar does.
+- Exam prep is as much about strategy — skipping and flagging tough questions, watching out for multiple-response formats — as it is about knowing the services, and meetups like this make it easier to ask questions than a big seminar does.
 
 ### Applying to Work
 
@@ -46,7 +48,7 @@ pre: " <b> 4.1. </b> "
 
 ### Event Experience
 
-This was a small, low-key morning meetup rather than a big conference, so the talks felt approachable and easy to follow. I mostly just sat and listened to both talks — Anh Long's session gave me a clearer picture of the range of issues AWS Security Agent catches and how useful the auto-generated PDF report actually is, while Anh Huy's certification tips — especially the flagging strategy and the heads-up about multiple-response questions — were the practical kind you don't really get from official docs. I left with concrete things to check in our own setup.
+This meetup had four speaker sessions in total, but the two that stuck with me most were Anh Long's and Anh Huy's. Anh Long's talk clarified what AWS Security Agent actually scans for and how useful its auto-generated PDF report is; Anh Huy's exam tips — especially the flagging strategy and the multiple-response question format — were practical insights rarely covered in official docs. I left with a few concrete things to check in our own setup.
 
 #### Some event photos
 *Photos go in `static/images/4-EventParticipated/4.1-Event1/` — once added, reference them here like `![](/images/4-EventParticipated/4.1-Event1/your-photo.jpg)`.*

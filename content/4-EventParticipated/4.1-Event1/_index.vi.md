@@ -17,6 +17,8 @@ pre: " <b> 4.1. </b> "
 
 ### Danh Sách Diễn Giả
 
+Sự kiện có tổng cộng 4 diễn giả; hai phần chia sẻ dưới đây là những phần được ghi lại chi tiết:
+
 - **Anh Long** – Security Solutions Architect, showcase **AWS Security Agent** (một service chính thức của AWS) và chia sẻ vì sao bảo mật hệ thống lại rất quan trọng ở thời điểm hiện tại
 - **Anh Huy** – AWS Certified Solutions Architect, chia sẻ kinh nghiệm thi chứng chỉ từ hành trình của chính anh
 
@@ -37,7 +39,7 @@ pre: " <b> 4.1. </b> "
 
 - Bảo mật không thể "để sau" khi rất nhiều code hiện nay được viết theo kiểu "vibe code" thay vì tự tay review từng dòng — lỗ hổng có thể ẩn ở bất cứ đâu, từ secret bị hardcode đến dependency lỗi thời, chứ không chỉ là lỗi cấu hình account.
 - Một service chính thức như AWS Security Agent thật sự hữu ích để bắt những lỗi mà không ai kiểm tra thủ công, và việc đóng gói kết quả thành dashboard cùng báo cáo PDF tự động giúp dễ hành động hơn nhiều.
-- Ôn thi chứng chỉ cũng cần chiến lược làm bài — biết khi nào nên bỏ qua và đánh flag câu khó, để ý dạng câu multiple response — chứ không chỉ là nắm vững kiến thức dịch vụ, và những buổi meetup nhỏ như thế này dễ đặt câu hỏi hơn hẳn hội thảo lớn.
+- Ôn thi chứng chỉ cũng cần chiến lược làm bài — biết khi nào nên bỏ qua và đánh flag câu khó, để ý dạng câu multiple response — chứ không chỉ là nắm vững kiến thức dịch vụ, và những buổi meetup như thế này dễ đặt câu hỏi hơn hẳn hội thảo lớn.
 
 ### Ứng Dụng Vào Công Việc
 
@@ -46,7 +48,7 @@ pre: " <b> 4.1. </b> "
 
 ### Trải nghiệm trong event
 
-Đây là một buổi meetup nhỏ, thân mật vào buổi sáng chứ không phải hội thảo lớn, nên nội dung chia sẻ khá gần gũi và dễ tiếp thu. Mình chủ yếu ngồi nghe cả hai phần chia sẻ — phần của anh Long giúp mình hiểu rõ hơn AWS Security Agent quét được những loại lỗ hổng nào và báo cáo PDF tự động đó hữu ích ra sao, còn mẹo thi của anh Huy — nhất là chiến lược đánh flag và lưu ý về dạng câu multiple response — là kinh nghiệm thực tế mà tài liệu chính thức không ghi. Mình rời buổi đó với vài việc cụ thể cần kiểm tra lại trong hệ thống.
+Buổi meetup này có 4 phần chia sẻ, nhưng mình ấn tượng nhất với phần của anh Long và anh Huy. Anh Long giúp mình hiểu rõ hơn AWS Security Agent quét được những gì và báo cáo PDF tự động hữu ích ra sao; anh Huy chia sẻ mẹo thi thực tế — nhất là chiến lược đánh flag và dạng câu multiple response — mà tài liệu chính thức ít khi đề cập. Mình rời buổi đó với vài việc cần kiểm tra lại trong hệ thống.
 
 #### Một số hình ảnh khi tham gia sự kiện
 *Ảnh sẽ được đặt trong `static/images/4-EventParticipated/4.1-Event1/` — sau khi thêm ảnh, chèn vào đây theo dạng `![](/images/4-EventParticipated/4.1-Event1/ten-anh.jpg)`.*
