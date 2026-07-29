@@ -46,7 +46,7 @@ pre: " <b> 4.1. </b> "
 
 ### Event Experience
 
-This was a small, low-key morning meetup rather than a big conference, which made it easier to actually talk to people — I got to ask Anh Long more about the range of issues AWS Security Agent catches beyond simple misconfigurations, and how the auto-generated PDF report actually gets used afterward. Anh Huy's certification tips — especially the flagging strategy and the heads-up about multiple-response questions — were the practical kind you don't really get from official docs. I left with concrete things to check in our own setup.
+This was a small, low-key morning meetup rather than a big conference, so the talks felt approachable and easy to follow. I mostly just sat and listened to both talks — Anh Long's session gave me a clearer picture of the range of issues AWS Security Agent catches and how useful the auto-generated PDF report actually is, while Anh Huy's certification tips — especially the flagging strategy and the heads-up about multiple-response questions — were the practical kind you don't really get from official docs. I left with concrete things to check in our own setup.
 
 #### Some event photos
 *Photos go in `static/images/4-EventParticipated/4.1-Event1/` — once added, reference them here like `![](/images/4-EventParticipated/4.1-Event1/your-photo.jpg)`.*

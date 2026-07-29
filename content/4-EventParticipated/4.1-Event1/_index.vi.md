@@ -46,7 +46,7 @@ pre: " <b> 4.1. </b> "
 
 ### Trải nghiệm trong event
 
-Đây là một buổi meetup nhỏ, thân mật vào buổi sáng chứ không phải hội thảo lớn, nên dễ trò chuyện trực tiếp hơn — mình hỏi thêm anh Long về những loại lỗ hổng mà AWS Security Agent phát hiện được ngoài lỗi cấu hình thông thường, và báo cáo PDF tự động đó thực tế được dùng như thế nào sau khi quét xong. Mẹo thi của anh Huy — nhất là chiến lược đánh flag và lưu ý về dạng câu multiple response — cũng là kinh nghiệm thực tế mà tài liệu chính thức không ghi. Mình rời buổi đó với vài việc cụ thể cần kiểm tra lại trong hệ thống.
+Đây là một buổi meetup nhỏ, thân mật vào buổi sáng chứ không phải hội thảo lớn, nên nội dung chia sẻ khá gần gũi và dễ tiếp thu. Mình chủ yếu ngồi nghe cả hai phần chia sẻ — phần của anh Long giúp mình hiểu rõ hơn AWS Security Agent quét được những loại lỗ hổng nào và báo cáo PDF tự động đó hữu ích ra sao, còn mẹo thi của anh Huy — nhất là chiến lược đánh flag và lưu ý về dạng câu multiple response — là kinh nghiệm thực tế mà tài liệu chính thức không ghi. Mình rời buổi đó với vài việc cụ thể cần kiểm tra lại trong hệ thống.
 
 #### Một số hình ảnh khi tham gia sự kiện
 *Ảnh sẽ được đặt trong `static/images/4-EventParticipated/4.1-Event1/` — sau khi thêm ảnh, chèn vào đây theo dạng `![](/images/4-EventParticipated/4.1-Event1/ten-anh.jpg)`.*
