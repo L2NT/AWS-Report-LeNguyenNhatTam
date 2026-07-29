@@ -20,7 +20,7 @@ pre: " <b> 1.5. </b> "
 | 4 | - Thêm CSRF protection cho luồng đăng nhập Google: sinh `state = crypto.randomUUID()` lưu ở `sessionStorage`, xác minh bằng `verifyOAuthState()` khi callback | 22/07/2026 | 22/07/2026 | |
 | 5 | - Test 5 kịch bản CSRF (đăng nhập bình thường, state đúng định dạng, giả lập tấn công CSRF bị chặn ở tầng app, state đúng nhưng code giả bị Cognito chặn, state bị xóa sau khi dùng) <br> - Bật mã hóa KMS cho DynamoDB (đổi từ AWS owned key sang `alias/aws/dynamodb`) | 23/07/2026 | 23/07/2026 | |
 | 6 | - Thêm bước pytest vào `pre_build` của CodePipeline (`backend/buildspec.yml`): chạy `flake8` lint + `pytest test_*_unit.py` trước mỗi lần build/deploy | 24/07/2026 | 24/07/2026 | |
-| 7 | - Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund" | 25/07/2026 | 25/07/2026 | |
+| 7   | - Họp nhóm: Review tiến độ công việc, đọc và sửa lỗi báo cáo giữa các thành viên trong nhóm <br> - Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund" | 25/07/2026 | 25/07/2026 | |
 
 
 ### Kết quả đạt được tuần 5:
@@ -30,6 +30,7 @@ pre: " <b> 1.5. </b> "
 * Thêm CSRF protection 2 lớp cho luồng đăng nhập Google, đã test đầy đủ 5 kịch bản kể cả giả lập tấn công.
 * Bật mã hóa KMS cho bảng DynamoDB chứa profile người dùng, có đầy đủ audit trail qua CloudTrail.
 * Thêm bước pytest chạy trong CodePipeline (`pre_build`) - một lớp bảo mật/chất lượng mới trước khi build & deploy.
+* Họp nhóm, review tiến độ và phối hợp chỉnh sửa lỗi trong báo cáo giữa các thành viên.
 * Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund" (25/07/2026) - xem chi tiết tại mục 4.2.
 
 

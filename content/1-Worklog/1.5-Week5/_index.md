@@ -20,7 +20,7 @@ pre: " <b> 1.5. </b> "
 | Wed | - Add CSRF protection to the Google login flow: generate `state = crypto.randomUUID()` stored in `sessionStorage`, verify it in `verifyOAuthState()` on callback | 22/07/2026 | 22/07/2026 | |
 | Thu | - Test 5 CSRF scenarios (normal login, valid state format, simulated CSRF attack rejected at the app layer, valid state with a forged code rejected by Cognito, state cleared after use) <br> - Enable KMS encryption on DynamoDB (switch from an AWS owned key to `alias/aws/dynamodb`) | 23/07/2026 | 23/07/2026 | |
 | Fri | - Add a pytest step to CodePipeline's `pre_build` phase (`backend/buildspec.yml`): run `flake8` lint + `pytest test_*_unit.py` before every build/deploy | 24/07/2026 | 24/07/2026 | |
-| Sat | - Attend the "FCAJ x Agentic AI Build Week powered by GenAI Fund" hackathon | 25/07/2026 | 25/07/2026 | |
+| Sat   | - Team meeting: Review work progress, read and fix report errors among team members <br> - Attend the "FCAJ x Agentic AI Build Week powered by GenAI Fund" hackathon | 25/07/2026 | 25/07/2026 | |
 
 
 ### Week 5 Achievements:
@@ -30,4 +30,5 @@ pre: " <b> 1.5. </b> "
 * Added 2-layer CSRF protection to the Google login flow, fully tested across 5 scenarios including a simulated attack.
 * Enabled KMS encryption on the DynamoDB user profiles table, with full audit trail via CloudTrail.
 * Added a pytest step to CodePipeline (`pre_build`) - a new quality/security gate before build & deploy.
+* Held a team meeting, reviewed work progress, and collaborated on fixing errors in the report among team members.
 * Attended the "FCAJ x Agentic AI Build Week powered by GenAI Fund" hackathon (25/07/2026) - see section 4.2 for details.
