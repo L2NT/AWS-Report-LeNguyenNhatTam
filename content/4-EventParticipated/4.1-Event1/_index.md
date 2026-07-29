@@ -48,7 +48,7 @@ The meetup featured four speakers in total; the two sessions below are the ones 
 
 ### Event Experience
 
-This meetup had four speaker sessions in total, but the two that stuck with me most were Anh Long's and Anh Huy's. Anh Long's talk clarified what AWS Security Agent actually scans for and how useful its auto-generated PDF report is; Anh Huy's exam tips — especially the flagging strategy and the multiple-response question format — were practical insights rarely covered in official docs. I left with a few concrete things to check in our own setup.
+This meetup had four speaker sessions, but the ones that stuck with me most were Anh Long's and Anh Huy's. Anh Long helped me understand more clearly what AWS Security Agent actually does, and how useful its auto-generated report is; Anh Huy shared practical exam tips that official docs rarely cover. I left the session with a lot of questions about the security side of our own project's setup.
 
 #### Some event photos
-*Photos go in `static/images/4-EventParticipated/4.1-Event1/` — once added, reference them here like `![](/images/4-EventParticipated/4.1-Event1/your-photo.jpg)`.*
+![Event 1 photo](/images/4-EventParticipated/4.1-Event1/Event-11-07-2026.jpeg)

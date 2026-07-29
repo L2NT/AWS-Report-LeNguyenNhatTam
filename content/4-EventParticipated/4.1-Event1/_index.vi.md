@@ -48,7 +48,7 @@ Sự kiện có tổng cộng 4 diễn giả; hai phần chia sẻ dưới đây
 
 ### Trải nghiệm trong event
 
-Buổi meetup này có 4 phần chia sẻ, nhưng mình ấn tượng nhất với phần của anh Long và anh Huy. Anh Long giúp mình hiểu rõ hơn AWS Security Agent quét được những gì và báo cáo PDF tự động hữu ích ra sao; anh Huy chia sẻ mẹo thi thực tế — nhất là chiến lược đánh flag và dạng câu multiple response — mà tài liệu chính thức ít khi đề cập. Mình rời buổi đó với vài việc cần kiểm tra lại trong hệ thống.
+Buổi meetup này có 4 phần chia sẻ, nhưng mình ấn tượng nhất với phần của anh Long và anh Huy. Anh Long giúp mình hiểu rõ hơn AWS Security Agent làm được những gì và việc con agent tạo báo cáo tự động khá là hữu ích; anh Huy chia sẻ mẹo thi thực tế, tài liệu chính thức ít khi đề cập. Khi mình rời khỏi buổi họp với nhiều thắc mắc về phần bảo mật trong hệ thống của project.
 
 #### Một số hình ảnh khi tham gia sự kiện
-*Ảnh sẽ được đặt trong `static/images/4-EventParticipated/4.1-Event1/` — sau khi thêm ảnh, chèn vào đây theo dạng `![](/images/4-EventParticipated/4.1-Event1/ten-anh.jpg)`.*
+![Ảnh sự kiện 1](/images/4-EventParticipated/4.1-Event1/Event-11-07-2026.jpeg)
