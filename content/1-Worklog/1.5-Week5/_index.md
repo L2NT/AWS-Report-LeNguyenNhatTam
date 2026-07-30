@@ -17,7 +17,7 @@ pre: " <b> 1.5. </b> "
 | --- | --- | --- | --- | --- |
 | Mon | - Set up 4 CloudWatch Alarms (lambda-errors, lambda-duration, lambda-throttles, apigateway-5xx) + an SNS Topic to send alerts by email | 20/07/2026 | 20/07/2026 | |
 | Tue | - Enable S3 Intelligent-Tiering on the user file storage bucket to auto-optimize storage costs | 21/07/2026 | 21/07/2026 | |
-| Wed | - Add CSRF protection to the Google login flow: generate `state = crypto.randomUUID()` stored in `sessionStorage`, verify it in `verifyOAuthState()` on callback | 22/07/2026 | 22/07/2026 | |
+| Wed | - Went to the office in person. Added CSRF protection to the Google login flow: generate `state = crypto.randomUUID()` stored in `sessionStorage`, verify it in `verifyOAuthState()` on callback | 22/07/2026 | 22/07/2026 | |
 | Thu | - Test 5 CSRF scenarios (normal login, valid state format, simulated CSRF attack rejected at the app layer, valid state with a forged code rejected by Cognito, state cleared after use) <br> - Enable KMS encryption on DynamoDB (switch from an AWS owned key to `alias/aws/dynamodb`) | 23/07/2026 | 23/07/2026 | |
 | Fri | - Add a pytest step to CodePipeline's `pre_build` phase (`backend/buildspec.yml`): run `flake8` lint + `pytest test_*_unit.py` before every build/deploy | 24/07/2026 | 24/07/2026 | |
 | Sat   | - Team meeting: Review work progress, read and fix report errors among team members <br> - Attend the "FCAJ x Agentic AI Build Week powered by GenAI Fund" hackathon | 25/07/2026 | 25/07/2026 | |

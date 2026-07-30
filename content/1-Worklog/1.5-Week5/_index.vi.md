@@ -17,7 +17,7 @@ pre: " <b> 1.5. </b> "
 | --- | --- | --- | --- | --- |
 | 2 | - Thiết lập 4 CloudWatch Alarms (lambda-errors, lambda-duration, lambda-throttles, apigateway-5xx) + SNS Topic gửi cảnh báo qua email | 20/07/2026 | 20/07/2026 | |
 | 3 | - Bật S3 Intelligent-Tiering cho bucket lưu file người dùng để tự động tối ưu chi phí | 21/07/2026 | 21/07/2026 | |
-| 4 | - Thêm CSRF protection cho luồng đăng nhập Google: sinh `state = crypto.randomUUID()` lưu ở `sessionStorage`, xác minh bằng `verifyOAuthState()` khi callback | 22/07/2026 | 22/07/2026 | |
+| 4 | - Lên văn phòng. Thêm CSRF protection cho luồng đăng nhập Google: sinh `state = crypto.randomUUID()` lưu ở `sessionStorage`, xác minh bằng `verifyOAuthState()` khi callback | 22/07/2026 | 22/07/2026 | |
 | 5 | - Test 5 kịch bản CSRF (đăng nhập bình thường, state đúng định dạng, giả lập tấn công CSRF bị chặn ở tầng app, state đúng nhưng code giả bị Cognito chặn, state bị xóa sau khi dùng) <br> - Bật mã hóa KMS cho DynamoDB (đổi từ AWS owned key sang `alias/aws/dynamodb`) | 23/07/2026 | 23/07/2026 | |
 | 6 | - Thêm bước pytest vào `pre_build` của CodePipeline (`backend/buildspec.yml`): chạy `flake8` lint + `pytest test_*_unit.py` trước mỗi lần build/deploy | 24/07/2026 | 24/07/2026 | |
 | 7   | - Họp nhóm: Review tiến độ công việc, đọc và sửa lỗi báo cáo giữa các thành viên trong nhóm <br> - Tham gia hackathon "FCAJ x Agentic AI Build Week powered by GenAI Fund" | 25/07/2026 | 25/07/2026 | |
