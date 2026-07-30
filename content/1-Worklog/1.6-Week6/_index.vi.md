@@ -14,9 +14,9 @@ pre: " <b> 1.6. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | - Review và chỉnh sửa lại nội dung mục Workshop cho rõ ràng, nhất quán hơn | 27/07/2026 | 27/07/2026 | |
-| 3 | - Đăng Blog 1 (EventBridge Scheduler), Blog 2 (Cold start), Blog 3 (Lambda Tenant Isolation) lên nhóm Facebook AWS Study Group | 28/07/2026 | 28/07/2026 | |
-| 4 | - Chỉnh sửa lại 4 diagram kiến trúc (Storage Structure, Lambda Modules, CI/CD Pipeline, Cleanup Flow) trên draw.io <br> - Xuất lại hình ảnh diagram mới vào mục 5.1.3 <br> - Cross-check lại các diagram với các thành viên khác trong nhóm <br> - Bổ sung các ảnh chụp test còn thiếu vào mục System Testing (5.5) | 29/07/2026 | 29/07/2026 | |
+| 2 | - Lên văn phòng. Review và chỉnh sửa lại nội dung mục Workshop cho rõ ràng, nhất quán hơn | 27/07/2026 | 27/07/2026 | |
+| 3 | - Đăng Blog 1 (EventBridge Scheduler), Blog 2 (Cold start), Blog 3 (Lambda Tenant Isolation) lên nhóm Facebook AWS Study Group | 28/07/2026 | 28/07/2026 | <https://www.facebook.com/groups/awsstudygroupfcj> |
+| 4 | - Lên văn phòng. Chỉnh sửa lại 4 diagram kiến trúc (Storage Structure, Lambda Modules, CI/CD Pipeline, Cleanup Flow) trên draw.io <br> - Xuất lại hình ảnh diagram mới vào mục 5.1.3 <br> - Cross-check lại các diagram với các thành viên khác trong nhóm <br> - Bổ sung các ảnh chụp test còn thiếu vào mục System Testing (5.5) | 29/07/2026 | 29/07/2026 | <https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/5-workshop/5.1-workshop-overview/5.1.3--overall-aws-architecture/> |
 
 
 ### Kết quả đạt được tuần 6:

@@ -14,9 +14,9 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Mon | - Reviewed and revised the Workshop section content for clarity and consistency | 27/07/2026 | 27/07/2026 | |
-| Tue | - Published Blog 1 (EventBridge Scheduler), Blog 2 (Cold start), Blog 3 (Lambda Tenant Isolation) to the AWS Study Group Facebook group | 28/07/2026 | 28/07/2026 | |
-| Wed | - Revised the 4 architecture diagrams (Storage Structure, Lambda Modules, CI/CD Pipeline, Cleanup Flow) in draw.io <br> - Re-exported the updated diagram images into section 5.1.3 <br> - Cross-checked the diagrams with other team members <br> - Added missing test screenshots to the System Testing subsections (5.5) | 29/07/2026 | 29/07/2026 | |
+| Mon | - Went to the office in person. Reviewed and revised the Workshop section content for clarity and consistency | 27/07/2026 | 27/07/2026 | |
+| Tue | - Published Blog 1 (EventBridge Scheduler), Blog 2 (Cold start), Blog 3 (Lambda Tenant Isolation) to the AWS Study Group Facebook group | 28/07/2026 | 28/07/2026 | <https://www.facebook.com/groups/awsstudygroupfcj> |
+| Wed | - Went to the office in person. Revised the 4 architecture diagrams (Storage Structure, Lambda Modules, CI/CD Pipeline, Cleanup Flow) in draw.io <br> - Re-exported the updated diagram images into section 5.1.3 <br> - Cross-checked the diagrams with other team members <br> - Added missing test screenshots to the System Testing subsections (5.5) | 29/07/2026 | 29/07/2026 | <https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/5-workshop/5.1-workshop-overview/5.1.3--overall-aws-architecture/> |
 
 
 ### Week 6 Achievements:
