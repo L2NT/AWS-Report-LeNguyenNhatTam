@@ -10,13 +10,13 @@ pre: " <b> 3.3. </b> "
 
 ## Giới thiệu
 
-Chào mọi người, nhóm mình đang làm một dự án chatbot hỏi-đáp tài liệu (RAG), phục vụ nhiều người dùng cùng lúc (multi-tenant): mỗi người đăng nhập qua Cognito, upload tài liệu riêng, và dữ liệu phải được cách ly tuyệt đối giữa các user. Backend chạy trên 1 Lambda function dạng Docker container duy nhất, phục vụ tất cả user.
+Chào mọi người, nhóm tôi đang làm một dự án chatbot hỏi-đáp tài liệu (RAG), phục vụ nhiều người dùng cùng lúc (multi-tenant): mỗi người đăng nhập qua Cognito, upload tài liệu riêng, và dữ liệu phải được cách ly tuyệt đối giữa các user. Backend chạy trên 1 Lambda function dạng Docker container duy nhất, phục vụ tất cả user.
 
-Đây là bug nghiêm trọng nhất mình từng gặp khi làm dự án này: User A upload tài liệu, User B đăng nhập vào lại thấy được cả tài liệu của User A, và tệ hơn — khi User B xóa hết tài liệu của mình, User A cũng mất sạch dữ liệu theo. Sau khi tự điều tra và fix xong bug này bằng tay, mình mới biết AWS vừa công bố (tháng 11/2025) một tính năng mới cho đúng vấn đề này: Lambda Tenant Isolation Mode. Bài viết này kể lại quá trình debug thật, giải thích tính năng mới, và — quan trọng nhất — phân tích vì sao tính năng này KHÔNG thể tự động sửa được bug mình gặp phải, dù nghe tên có vẻ như vậy.
+Đây là bug nghiêm trọng nhất tôi từng gặp khi làm dự án này: User A upload tài liệu, User B đăng nhập vào lại thấy được cả tài liệu của User A, và tệ hơn — khi User B xóa hết tài liệu của mình, User A cũng mất sạch dữ liệu theo. Sau khi tự điều tra và fix xong bug này bằng tay, tôi mới biết AWS vừa công bố (tháng 11/2025) một tính năng mới cho đúng vấn đề này: Lambda Tenant Isolation Mode. Bài viết này kể lại quá trình debug thật, giải thích tính năng mới, và — quan trọng nhất — phân tích vì sao tính năng này KHÔNG thể tự động sửa được bug tôi gặp phải, dù nghe tên có vẻ như vậy.
 
 ## Bug thật: Vì sao dữ liệu bị lẫn giữa các user?
 
-Lambda có đặc tính tái sử dụng execution environment (container) giữa nhiều lần gọi để tăng tốc (tránh cold start) — nhưng mặc định, môi trường được tái sử dụng cho bất kỳ request nào của cùng 1 function, không phân biệt request đó đến từ user nào. Trong code backend của mình, có 2 chỗ vô tình dựa vào việc "container được giữ nguyên giữa các request":
+Lambda có đặc tính tái sử dụng execution environment (container) giữa nhiều lần gọi để tăng tốc (tránh cold start) — nhưng mặc định, môi trường được tái sử dụng cho bất kỳ request nào của cùng 1 function, không phân biệt request đó đến từ user nào. Trong code backend của tôi, có 2 chỗ vô tình dựa vào việc "container được giữ nguyên giữa các request":
 
 1. Một `dict` toàn cục (`state`) lưu `raw_documents`, `vector_store`... dùng chung cho mọi request trên cùng 1 container.
 2. FAISS vector index dùng path cố định `vectorstore/smartdoc_index` trên S3 — không có `user_id` trong path, nên mọi user đọc/ghi cùng 1 file index.
@@ -29,7 +29,7 @@ Tính năng mới cho phép Lambda xử lý các lần gọi hàm trong các exe
 
 Cách hoạt động: bạn truyền thêm tham số `tenant-id` (qua header `X-Amz-Tenant-Id` khi tích hợp API Gateway) trong mỗi lần invoke. Lambda dùng ID này để đảm bảo environment chỉ được tái sử dụng cho cùng 1 tenant — vẫn giữ được lợi ích warm start, nhưng không còn nguy cơ dữ liệu trong RAM/`/tmp` bị rò rỉ chéo giữa các tenant.
 
-## Cách mình đã fix bug (trước khi biết tới tính năng này)
+## Cách tôi đã fix bug (trước khi biết tới tính năng này)
 
 1. `get_user_index_name(user_id)` — tính riêng path FAISS theo từng user: `f"{user_id}/{FAISS_INDEX_NAME}"`
 2. Mọi endpoint tài liệu/chat đọc lại dữ liệu tươi mới trực tiếp từ S3/FAISS mỗi request, không còn phụ thuộc biến `state` toàn cục
@@ -37,9 +37,9 @@ Cách hoạt động: bạn truyền thêm tham số `tenant-id` (qua header `X-
 
 ## Vì sao Tenant Isolation Mode KHÔNG tự động sửa được bug này?
 
-Đây là phần mình muốn nhấn mạnh, vì rất dễ bị hỏi "sao không đợi/dùng tính năng có sẵn cho nhàn":
+Đây là phần tôi muốn nhấn mạnh, vì rất dễ bị hỏi "sao không đợi/dùng tính năng có sẵn cho nhàn":
 
-Tenant Isolation Mode chỉ cách ly ở compute layer — execution environment, RAM, `/tmp`. Nó không và không thể can thiệp vào cách ứng dụng đặt tên key trên S3 hay DynamoDB. Nếu mình chỉ bật Tenant Isolation Mode mà không sửa đường dẫn S3 (`vectorstore/smartdoc_index` dùng chung), thì:
+Tenant Isolation Mode chỉ cách ly ở compute layer — execution environment, RAM, `/tmp`. Nó không và không thể can thiệp vào cách ứng dụng đặt tên key trên S3 hay DynamoDB. Nếu tôi chỉ bật Tenant Isolation Mode mà không sửa đường dẫn S3 (`vectorstore/smartdoc_index` dùng chung), thì:
 
 - Biến `state` trong RAM sẽ được cách ly đúng — không còn user này thấy cache của user kia trong cùng lần chạy.
 - Nhưng khi Lambda (dù chạy trong environment riêng của tenant nào) đọc lại FAISS index từ S3 theo path cố định `vectorstore/smartdoc_index`, nó vẫn đọc đúng 1 file dùng chung đó — bug persistent-data vẫn còn nguyên, vì gốc rễ nằm ở tầng data modeling (application logic), không phải tầng compute isolation.
@@ -48,7 +48,7 @@ Nói cách khác: Tenant Isolation Mode là lớp phòng thủ bổ sung rất t
 
 ## Kết quả kiểm chứng
 
-Sau khi fix thủ công (trước khi tính năng Tenant Isolation Mode ra mắt), mình test lại với 2 Cognito user thật:
+Sau khi fix thủ công (trước khi tính năng Tenant Isolation Mode ra mắt), tôi test lại với 2 Cognito user thật:
 - Mỗi user chỉ thấy đúng file của mình qua `/api/files`
 - Hỏi AI về "mã số bí mật" trong tài liệu của người kia → AI trả lời "không có trong tài liệu"
 - User B xóa hết file → User A vẫn còn nguyên dữ liệu

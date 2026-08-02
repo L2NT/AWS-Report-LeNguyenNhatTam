@@ -48,7 +48,7 @@ Sự kiện có tổng cộng 4 diễn giả; hai phần chia sẻ dưới đây
 
 ### Trải nghiệm trong event
 
-Buổi meetup này có 4 phần chia sẻ, nhưng mình ấn tượng nhất với phần của anh Long và anh Huy. Anh Long giúp mình hiểu rõ hơn AWS Security Agent làm được những gì và việc con agent tạo báo cáo tự động khá là hữu ích; anh Huy chia sẻ mẹo thi thực tế, tài liệu chính thức ít khi đề cập. Khi mình rời khỏi buổi họp với nhiều thắc mắc về phần bảo mật trong hệ thống của project.
+Buổi meetup này có 4 phần chia sẻ, nhưng tôi ấn tượng nhất với phần của anh Long và anh Huy. Anh Long giúp tôi hiểu rõ hơn AWS Security Agent làm được những gì và việc con agent tạo báo cáo tự động khá là hữu ích; anh Huy chia sẻ mẹo thi thực tế, tài liệu chính thức ít khi đề cập. Khi tôi rời khỏi buổi họp với nhiều thắc mắc về phần bảo mật trong hệ thống của project.
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Ảnh sự kiện 1](/images/4-EventParticipated/4.1-Event1/Event-11-07-2026.jpeg)

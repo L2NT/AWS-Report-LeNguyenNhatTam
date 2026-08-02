@@ -68,7 +68,7 @@ pre: " <b> 4.2. </b> "
 
 ### Trải nghiệm trong event
 
-Đây là buổi tổng kết/demo day của một hackathon chứ không phải buổi chia sẻ kiểu hội thảo, nên gần như cả buổi là 4 đội pitch nối tiếp nhau, sau đó là phần chia sẻ mở về hành trình 24 giờ vừa qua. Mình chủ yếu ngồi xem phần demo và Q&A — ấn tượng nhất là hệ thống chống rửa tiền của Six Piller và trợ lý kiến trúc của Long & Co, vì cả hai đều thiết kế theo hướng con người vẫn duyệt lại trước khi hành động, thay vì để AI tự động hoàn toàn.
+Đây là buổi tổng kết/demo day của một hackathon chứ không phải buổi chia sẻ kiểu hội thảo, nên gần như cả buổi là 4 đội pitch nối tiếp nhau, sau đó là phần chia sẻ mở về hành trình 24 giờ vừa qua. Tôi chủ yếu ngồi xem phần demo và Q&A — ấn tượng nhất là hệ thống chống rửa tiền của Six Piller và trợ lý kiến trúc của Long & Co, vì cả hai đều thiết kế theo hướng con người vẫn duyệt lại trước khi hành động, thay vì để AI tự động hoàn toàn.
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Ảnh sự kiện 2](/images/4-EventParticipated/4.2-Event2/Event-25-07-2026.png)

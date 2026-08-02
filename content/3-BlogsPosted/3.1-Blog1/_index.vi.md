@@ -10,11 +10,11 @@ pre: " <b> 3.1. </b> "
 
 ## Giới thiệu
 
-Chào mọi người, nhóm mình đang làm một dự án chatbot hỏi-đáp tài liệu (RAG): người dùng upload file PDF/DOCX rồi hỏi đáp trực tiếp với AI dựa trên nội dung tài liệu đó. Toàn bộ hệ thống chạy serverless trên AWS — API Gateway + Lambda (đóng gói Docker) cho backend, Cognito cho xác thực, DynamoDB + S3 cho lưu trữ, Amazon Bedrock cho phần LLM/Embeddings.
+Chào mọi người, nhóm tôi đang làm một dự án chatbot hỏi-đáp tài liệu (RAG): người dùng upload file PDF/DOCX rồi hỏi đáp trực tiếp với AI dựa trên nội dung tài liệu đó. Toàn bộ hệ thống chạy serverless trên AWS — API Gateway + Lambda (đóng gói Docker) cho backend, Cognito cho xác thực, DynamoDB + S3 cho lưu trữ, Amazon Bedrock cho phần LLM/Embeddings.
 
-Trong quá trình triển khai, mình cần một cơ chế tự động dọn dẹp các tài khoản Cognito đăng ký nhưng không xác thực email (`UNCONFIRMED`) — nếu để lâu, chúng chỉ là "rác" trong User Pool. Giải pháp mình chọn là một **EventBridge Rule** chạy `rate(1 minute)` để trigger Lambda kiểm tra và xóa các user quá hạn.
+Trong quá trình triển khai, tôi cần một cơ chế tự động dọn dẹp các tài khoản Cognito đăng ký nhưng không xác thực email (`UNCONFIRMED`) — nếu để lâu, chúng chỉ là "rác" trong User Pool. Giải pháp tôi chọn là một **EventBridge Rule** chạy `rate(1 minute)` để trigger Lambda kiểm tra và xóa các user quá hạn.
 
-Khi tìm hiểu sâu hơn để viết bài này, mình phát hiện AWS đã có hẳn một dịch vụ riêng cho việc lập lịch — **Amazon EventBridge Scheduler** — mạnh mẽ hơn nhiều so với EventBridge Rule truyền thống. Bài viết này sẽ đi qua sự khác biệt giữa 2 lựa chọn, và quan trọng hơn: **tại sao mình vẫn chọn Rule cho use case hiện tại**, chứ không phải chuyển ngay sang Scheduler chỉ vì nó "mới hơn".
+Khi tìm hiểu sâu hơn để viết bài này, tôi phát hiện AWS đã có hẳn một dịch vụ riêng cho việc lập lịch — **Amazon EventBridge Scheduler** — mạnh mẽ hơn nhiều so với EventBridge Rule truyền thống. Bài viết này sẽ đi qua sự khác biệt giữa 2 lựa chọn, và quan trọng hơn: **tại sao tôi vẫn chọn Rule cho use case hiện tại**, chứ không phải chuyển ngay sang Scheduler chỉ vì nó "mới hơn".
 
 ## EventBridge Scheduler là gì?
 
@@ -29,13 +29,13 @@ Trước đây, nếu muốn lập lịch một tác vụ, lựa chọn phổ bi
 
 EventBridge Scheduler giải quyết toàn bộ các giới hạn trên: hỗ trợ tới **1 triệu schedule/tài khoản** (thay vì 300 rule/region), throughput lên tới hàng nghìn TPS, kết nối được **hơn 270 dịch vụ AWS và 6.000+ API actions** (thay vì ~20 target của Rule), hỗ trợ **lịch chạy 1 lần** (`at()`) bên cạnh recurring, có **time window** để giãn tải request, có sẵn **retry + dead-letter queue** (mặc định thử lại 185 lần trong 24h), và hỗ trợ đầy đủ **time zone/DST** thay vì chỉ UTC như Rule.
 
-## Kiến trúc thực tế trong dự án của mình
+## Kiến trúc thực tế trong dự án của tôi
 
 Lambda backend được thiết kế theo dạng **phân nhánh sự kiện**: cùng 1 function xử lý cả HTTP request (qua API Gateway/Mangum) lẫn event định kỳ từ EventBridge, dựa vào `event.get("source") == "aws.events"`. Đây là lựa chọn tối giản — không cần thêm Lambda riêng chỉ để chạy cron job.
 
-## Vì sao mình chọn EventBridge Rule chứ không phải Scheduler?
+## Vì sao tôi chọn EventBridge Rule chứ không phải Scheduler?
 
-Đây là phần mình nghĩ quan trọng nhất, vì rất dễ bị hỏi ngược "sao không dùng luôn cái mới cho chuẩn":
+Đây là phần tôi nghĩ quan trọng nhất, vì rất dễ bị hỏi ngược "sao không dùng luôn cái mới cho chuẩn":
 
 1. **Chỉ có đúng 1 loại tác vụ định kỳ** trong toàn hệ thống — dọn user chưa xác thực. Không có nhu cầu lập lịch riêng theo từng user/tenant, nên không chạm tới giới hạn 300 rule hay cần 1 triệu schedule của Scheduler.
 2. **Không cần retry/DLQ phức tạp** — nếu 1 lần chạy dọn dẹp bị lỗi, lần chạy tiếp theo (1 phút sau) sẽ tự chạy lại và vẫn dọn đúng các user quá hạn, không cần cơ chế retry riêng.

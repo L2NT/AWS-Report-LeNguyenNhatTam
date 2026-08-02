@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Kỳ thực tập của mình kéo dài **8 tuần**, từ **22/06/2026** đến **14/08/2026**, theo chương trình First Cloud AI Journey (FCAJ). Xuyên suốt 8 tuần, mình vừa học các dịch vụ AWS nền tảng, vừa áp dụng trực tiếp vào việc xây dựng **Smart Docs AI** — một chatbot hỏi-đáp tài liệu (RAG) chạy trên kiến trúc serverless của AWS. Dưới đây là tóm tắt từng tuần:
+Kỳ thực tập của tôi kéo dài **8 tuần**, từ **22/06/2026** đến **14/08/2026**, theo chương trình First Cloud AI Journey (FCAJ). Xuyên suốt 8 tuần, tôi vừa học các dịch vụ AWS nền tảng, vừa áp dụng trực tiếp vào việc xây dựng **Smart Docs AI** — một chatbot hỏi-đáp tài liệu (RAG) chạy trên kiến trúc serverless của AWS. Dưới đây là tóm tắt từng tuần:
 
 **Tuần 1:** [Làm quen AWS Cloud, IAM, VPC và chốt đề tài Smart Docs AI](1.1-week1/)
 
