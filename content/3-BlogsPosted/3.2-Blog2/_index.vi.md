@@ -74,4 +74,3 @@ https://aws.amazon.com/blogs/compute/operating-lambda-performance-optimization-p
 ## Link bài đã đăng trong AWS Study Group
 https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226685044763122/
 
-...Hướng dẫn...

@@ -63,4 +63,3 @@ https://aws.amazon.com/blogs/compute/building-multi-tenant-saas-applications-wit
 ## Link bài đã đăng trong AWS Study Group
 https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226685264763100/
 
-...Hướng dẫn...
