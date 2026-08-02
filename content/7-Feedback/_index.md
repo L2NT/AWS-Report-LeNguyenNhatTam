@@ -32,12 +32,18 @@ The company provides an internship allowance and offers flexible working hours w
 
 ### Additional Questions
 - What did you find **most satisfying** during your internship?  
+  What I found most satisfying was building a complete product from scratch — from a simple RAG chatbot idea to a real system running on AWS with full authentication, CI/CD, and monitoring. Debugging tricky bugs like the multi-tenancy data leak myself, then turning it into a blog post for the AWS Study Group community, was the most memorable part.
 - What do you think the company **should improve** for future interns?  
+  I think the program could add more cross-team technical review sessions, so interns can learn how other teams approach problems instead of staying limited to their own team.
 - If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+  Yes. I'd recommend it because you get to work on a real project with the latest AWS technologies, with a mentor who guides you closely but still lets you solve problems on your own — which helped me learn a lot in a short time.
 
 ---
 
 ### Suggestions & Expectations
 - Do you have any suggestions to improve the internship experience?  
+  Maybe add 1-2 career-focused sharing sessions from senior AWS staff, in addition to the purely technical sessions.
 - Would you like to continue this program in the future?  
+  Yes, if given the chance I'd love to continue with similar FCAJ or AWS programs in the future, even in a different role such as mentoring future interns.
 - Any other comments (free sharing):
+  Thank you to the FCAJ team and my mentor for giving me the chance to learn and practice in an environment that's professional yet still very friendly. This has been a memorable internship experience.
