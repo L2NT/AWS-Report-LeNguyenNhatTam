@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** (chương trình Workforce Bootcamp - First Cloud AI Journey) từ **22/06/2026** đến **14/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
+Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Việt Nam** (chương trình Workforce Bootcamp - First Cloud AI Journey) từ **22/06/2026** đến **15/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
 Tôi đã tham gia xây dựng **Smart Docs AI**, một trợ lý tài liệu serverless ứng dụng kỹ thuật Retrieval-Augmented Generation (RAG) trên AWS — bao gồm xác thực người dùng (Cognito), lưu trữ dữ liệu (S3, DynamoDB), backend FastAPI/Lambda, tích hợp Amazon Bedrock, và quy trình CI/CD hoàn chỉnh với CodePipeline/CodeBuild/ECR — qua đó cải thiện kỹ năng thiết kế kiến trúc cloud, phát triển backend, tự động hóa CI/CD và viết tài liệu kỹ thuật.  
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.

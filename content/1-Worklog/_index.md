@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-My internship ran for **8 weeks**, from **June 22, 2026** to **August 14, 2026**, as part of the First Cloud AI Journey (FCAJ) program. Throughout these 8 weeks, I learned foundational AWS services and applied them directly while building **Smart Docs AI** — a document Q&A chatbot (RAG) running on a serverless AWS architecture. Here's a summary of each week:
+My internship ran for **8 weeks**, from **June 22, 2026** to **August 15, 2026**, as part of the First Cloud AI Journey (FCAJ) program. Throughout these 8 weeks, I learned foundational AWS services and applied them directly while building **Smart Docs AI** — a document Q&A chatbot (RAG) running on a serverless AWS architecture. Here's a summary of each week:
 
 **Week 1:** [Getting familiar with AWS Cloud, IAM, VPC, and locking in the Smart Docs AI topic](1.1-week1/)
 

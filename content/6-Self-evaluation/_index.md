@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam Company Limited** (Workforce Bootcamp - First Cloud AI Journey program) from **22/06/2026** to **14/08/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
+During my internship at **Amazon Web Services Vietnam Company Limited** (Workforce Bootcamp - First Cloud AI Journey program) from **22/06/2026** to **15/08/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
 I participated in building **Smart Docs AI**, a serverless document assistant powered by Retrieval-Augmented Generation (RAG) on AWS — covering user authentication (Cognito), data storage (S3, DynamoDB), the FastAPI/Lambda backend, Amazon Bedrock integration, and a full CodePipeline/CodeBuild/ECR CI/CD pipeline — through which I improved my skills in cloud architecture design, backend development, CI/CD automation, and technical documentation.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.

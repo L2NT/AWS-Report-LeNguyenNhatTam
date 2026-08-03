@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 22/06/2026 to 14/08/2026
+&emsp; **Internship Duration:** From 22/06/2026 to 15/08/2026
 
 ![Le Nguyen Nhat Tam's profile picture](images/avatar.png)
 
