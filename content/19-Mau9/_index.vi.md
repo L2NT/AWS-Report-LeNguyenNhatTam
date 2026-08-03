@@ -92,7 +92,7 @@ First Cloud AI Journey là chương trình thực tập/đào tạo (Workforce B
 
 Trong quá trình tham gia FCAJ, các nhóm sinh viên được:
 
-- Tự đề xuất và bảo vệ ý tưởng dự án (Bản đề xuất — Mẫu 2) trước khi bắt tay vào triển khai.
+- Tự đề xuất và bảo vệ ý tưởng dự án trước khi bắt tay vào triển khai.
 - Được mentor của AWS hỗ trợ định kỳ hàng tuần để review kiến trúc, code, tiến độ dự án.
 - Tham gia các buổi workshop/sự kiện chia sẻ kiến thức chuyên sâu về các dịch vụ AWS do đội ngũ Solutions Architect của AWS tổ chức.
 - Ghi nhận kết quả thực tập hàng tuần (Mẫu 6) có xác nhận của chuyên gia hướng dẫn.
@@ -101,7 +101,7 @@ Em được phân công thực tập theo mô hình nhóm 3 sinh viên (cùng 2 
 
 ## 1.2. Nhiệm vụ thực tập
 
-Theo phân công của chuyên gia doanh nghiệp hướng dẫn (anh Nguyễn Gia Hưng) và đề cương học phần thực tập tốt nghiệp, nhóm 3 sinh viên (Tâm, Phong, Trọng) được giao nhiệm vụ nghiên cứu, thiết kế và triển khai hoàn chỉnh dự án **SmartDocAI** — nền tảng hỏi đáp & trích xuất tri thức tài liệu thông minh trên AWS Serverless (chi tiết xem [Bản đề xuất](https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/vi/2-proposal/) — Mẫu 2), cụ thể:
+Theo phân công của chuyên gia doanh nghiệp hướng dẫn (anh Nguyễn Gia Hưng) và đề cương học phần thực tập tốt nghiệp, nhóm 3 sinh viên (Tâm, Phong, Trọng) được giao nhiệm vụ nghiên cứu, thiết kế và triển khai hoàn chỉnh dự án **SmartDocAI** — nền tảng hỏi đáp & trích xuất tri thức tài liệu thông minh trên AWS Serverless, cụ thể:
 
 - Tìm hiểu và thực hành các dịch vụ AWS nền tảng: IAM, VPC, EC2, S3, RDS/Aurora, DynamoDB, Lambda, API Gateway, CloudFront, Cognito, Bedrock, CodePipeline/CodeBuild, CloudWatch, KMS, EventBridge.
 - Thiết kế kiến trúc Serverless Container Architecture (FastAPI trên Lambda + React SPA) và triển khai từng thành phần hạ tầng.
@@ -118,7 +118,7 @@ Chương 1 đã giới thiệu tổng quan về Công ty TNHH Amazon Web Service
 
 # CHƯƠNG 2. NỘI DUNG THỰC TẬP
 
-Trong suốt đợt thực tập, nhóm đã triển khai dự án **SmartDocAI** theo kiến trúc Serverless hoàn toàn trên nền tảng AWS, gồm các thành phần chính: Frontend (React SPA lưu trữ trên S3, phân phối qua CloudFront), Backend (FastAPI đóng gói Docker chạy trên AWS Lambda, expose qua API Gateway), xác thực người dùng qua AWS Cognito, lưu trữ dữ liệu (Amazon S3, DynamoDB) và mô hình AI tạo sinh Amazon Bedrock (Titan Embeddings V2, Qwen 3 Next 80B) phục vụ pipeline RAG (Retrieval-Augmented Generation) hỏi đáp tài liệu. Mục tiêu, vấn đề cần giải quyết và sơ đồ kiến trúc chi tiết của dự án đã được trình bày tại [Bản đề xuất](https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/vi/2-proposal/) (Mẫu 2).
+Trong suốt đợt thực tập, nhóm đã triển khai dự án **SmartDocAI** theo kiến trúc Serverless hoàn toàn trên nền tảng AWS, gồm các thành phần chính: Frontend (React SPA lưu trữ trên S3, phân phối qua CloudFront), Backend (FastAPI đóng gói Docker chạy trên AWS Lambda, expose qua API Gateway), xác thực người dùng qua AWS Cognito, lưu trữ dữ liệu (Amazon S3, DynamoDB) và mô hình AI tạo sinh Amazon Bedrock (Titan Embeddings V2, Qwen 3 Next 80B) phục vụ pipeline RAG (Retrieval-Augmented Generation) hỏi đáp tài liệu. Mục tiêu, vấn đề cần giải quyết và sơ đồ kiến trúc chi tiết của dự án được trình bày đầy đủ hơn trong tài liệu Workshop nộp riêng cho phía doanh nghiệp (AWS).
 
 Cá nhân em đảm nhiệm chính các nội dung sau:
 
@@ -142,9 +142,9 @@ Cá nhân em đảm nhiệm chính các nội dung sau:
 **d. Biên soạn tài liệu kỹ thuật & Workshop**
 
 - Vẽ và cập nhật các sơ đồ kiến trúc hệ thống (Frontend, Backend, CI/CD Pipeline, Cleanup Flow) bằng draw.io.
-- Biên soạn chi tiết tài liệu hướng dẫn triển khai lại toàn bộ hệ thống từ đầu, trình bày tại [Chương 5 — Workshop](https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/vi/5-workshop/) của báo cáo này, bao gồm các bước chuẩn bị môi trường, triển khai Frontend/Backend, kiểm thử hệ thống và tổng kết chi phí.
+- Biên soạn chi tiết tài liệu hướng dẫn triển khai lại toàn bộ hệ thống từ đầu (bao gồm các bước chuẩn bị môi trường, triển khai Frontend/Backend, kiểm thử hệ thống và tổng kết chi phí), trình bày trong bộ tài liệu Workshop nộp riêng cho phía doanh nghiệp (AWS).
 
-Với mỗi nội dung trên, giải pháp áp dụng, khó khăn gặp phải và kết quả đạt được đều được ghi nhận chi tiết theo tuần tại Chương 3 và tại [Nhật ký thực tập (Worklog)](https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/vi/1-worklog/) của trang báo cáo.
+Với mỗi nội dung trên, giải pháp áp dụng, khó khăn gặp phải và kết quả đạt được đều được ghi nhận chi tiết theo tuần tại Chương 3 của báo cáo này.
 
 **Kết luận chương 2**
 
@@ -152,7 +152,7 @@ Chương 2 đã trình bày nội dung công việc thực tế đã thực hi�
 
 # CHƯƠNG 3: KẾT QUẢ THỰC TẬP
 
-Sau 6 tuần đầu thực tập (22/06/2026 – 01/08/2026), nhóm đã đạt được các kết quả cụ thể sau (chi tiết từng tuần xem tại [Mẫu 6](https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/vi/16-mau6/) và [Worklog](https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/vi/1-worklog/)):
+Sau 6 tuần đầu thực tập (22/06/2026 – 01/08/2026), nhóm đã đạt được các kết quả cụ thể sau (chi tiết từng tuần xem tại Bảng ghi nhận kết quả thực tập hàng tuần — Mẫu 6, đính kèm cuối chương này):
 
 - Hoàn thành toàn bộ hạ tầng Serverless: Cognito, API Gateway, Lambda (Docker), S3, DynamoDB, CloudFront, Bedrock.
 - Hoàn thiện luồng xác thực người dùng (đăng ký/đăng nhập/Google OAuth) và phát hiện, khắc phục thành công lỗi bảo mật multi-tenancy nghiêm trọng trước khi lên production.
