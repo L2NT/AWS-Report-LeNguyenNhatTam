@@ -35,7 +35,7 @@ Lambda backend được thiết kế theo dạng **phân nhánh sự kiện**: c
 
 ## Vì sao tôi chọn EventBridge Rule chứ không phải Scheduler?
 
-Đây là phần tôi nghĩ quan trọng nhất, vì rất dễ bị hỏi ngược "sao không dùng luôn cái mới cho chuẩn":
+Đây là phần tôi cho là quan trọng nhất, vì đây thường là câu hỏi phản biện dễ gặp nhất: "tại sao không dùng ngay giải pháp mới và tiêu chuẩn hơn?":
 
 1. **Chỉ có đúng 1 loại tác vụ định kỳ** trong toàn hệ thống — dọn user chưa xác thực. Không có nhu cầu lập lịch riêng theo từng user/tenant, nên không chạm tới giới hạn 300 rule hay cần 1 triệu schedule của Scheduler.
 2. **Không cần retry/DLQ phức tạp** — nếu 1 lần chạy dọn dẹp bị lỗi, lần chạy tiếp theo (1 phút sau) sẽ tự chạy lại và vẫn dọn đúng các user quá hạn, không cần cơ chế retry riêng.
