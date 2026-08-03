@@ -97,11 +97,11 @@ Trong quá trình tham gia FCAJ, các nhóm sinh viên được:
 - Tham gia các buổi workshop/sự kiện chia sẻ kiến thức chuyên sâu về các dịch vụ AWS do đội ngũ Solutions Architect của AWS tổ chức.
 - Ghi nhận kết quả thực tập hàng tuần (Mẫu 6) có xác nhận của chuyên gia hướng dẫn.
 
-Em được phân công thực tập theo mô hình nhóm 3 sinh viên (cùng 2 bạn Phong và Trọng), cùng triển khai chung dự án SmartDocAI, trong đó em đảm nhiệm phần trọng tâm về Backend, bảo mật hệ thống (multi-tenancy, CSRF, KMS) và biên soạn tài liệu kỹ thuật/workshop.
+Em được phân công thực tập theo mô hình nhóm 5 sinh viên (cùng các bạn Phong, Trọng, Nam và Phúc), cùng triển khai chung dự án SmartDocAI, trong đó em đảm nhiệm phần trọng tâm về Backend, bảo mật hệ thống (multi-tenancy, CSRF, KMS) và biên soạn tài liệu kỹ thuật/workshop.
 
 ## 1.2. Nhiệm vụ thực tập
 
-Theo phân công của chuyên gia doanh nghiệp hướng dẫn (anh Nguyễn Gia Hưng) và đề cương học phần thực tập tốt nghiệp, nhóm 3 sinh viên (Tâm, Phong, Trọng) được giao nhiệm vụ nghiên cứu, thiết kế và triển khai hoàn chỉnh dự án **SmartDocAI** — nền tảng hỏi đáp & trích xuất tri thức tài liệu thông minh trên AWS Serverless, cụ thể:
+Theo phân công của chuyên gia doanh nghiệp hướng dẫn (anh Nguyễn Gia Hưng) và đề cương học phần thực tập tốt nghiệp, nhóm 5 sinh viên (Tâm, Phong, Trọng, Nam, Phúc) được giao nhiệm vụ nghiên cứu, thiết kế và triển khai hoàn chỉnh dự án **SmartDocAI** — nền tảng hỏi đáp & trích xuất tri thức tài liệu thông minh trên AWS Serverless, cụ thể:
 
 - Tìm hiểu và thực hành các dịch vụ AWS nền tảng: IAM, VPC, EC2, S3, RDS/Aurora, DynamoDB, Lambda, API Gateway, CloudFront, Cognito, Bedrock, CodePipeline/CodeBuild, CloudWatch, KMS, EventBridge.
 - Thiết kế kiến trúc Serverless Container Architecture (FastAPI trên Lambda + React SPA) và triển khai từng thành phần hạ tầng.
@@ -110,7 +110,7 @@ Theo phân công của chuyên gia doanh nghiệp hướng dẫn (anh Nguyễn G
 - Tự động hóa CI/CD với AWS CodePipeline/CodeBuild, thiết lập giám sát (CloudWatch Alarms/SNS) và các cơ chế production-hardening (mã hóa KMS, S3 Intelligent-Tiering, EventBridge cleanup, CSRF protection).
 - Biên soạn tài liệu workshop hướng dẫn triển khai lại toàn bộ hệ thống (Chương 5) phục vụ cộng đồng học tập.
 
-Riêng cá nhân em tập trung chính vào mảng Backend (FastAPI, Lambda), bảo mật hệ thống và biên soạn tài liệu kỹ thuật/workshop, trong khi 2 bạn cùng nhóm phụ trách các mảng Backend khác (Phong) và Frontend (Trọng).
+Riêng cá nhân em tập trung chính vào mảng Backend (FastAPI, Lambda), bảo mật hệ thống và biên soạn tài liệu kỹ thuật/workshop, trong khi các bạn cùng nhóm phụ trách các mảng khác của dự án (Backend, Frontend, nghiên cứu, thuyết trình).
 
 ### Kết luận chương 1
 
