@@ -1,5 +1,5 @@
 ---
-title: "Blog 2: Kiến Trúc Bedrock AWS Landing Zone"
+title: "Blog 2"
 date: 2024-01-01
 weight: 1
 chapter: false
