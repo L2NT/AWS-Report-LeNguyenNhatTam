@@ -9,15 +9,20 @@ pre: " <b> 1.7. </b> "
 
 ### Mục tiêu tuần 7:
 
-
+* Hoàn tất và nộp Workshop report lên hệ thống.
+* Nộp báo cáo thực tập tốt nghiệp cho trường để chấm điểm, xin xác nhận và đóng dấu từ công ty.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-|     |     |     |     |     |
+| 2   | - Nộp Workshop report lên hệ thống | 03/08/2026 | 03/08/2026 | |
+| 3   | - Nộp báo cáo thực tập tốt nghiệp cho trường để chấm điểm, xin đóng dấu xác nhận (lấy mộc) từ công ty | 04/08/2026 | 04/08/2026 | |
 
 
 ### Kết quả đạt được tuần 7:
+
+* Hoàn thành nộp Workshop report lên hệ thống đúng hạn.
+* Hoàn thành nộp báo cáo thực tập tốt nghiệp, có đóng dấu xác nhận từ công ty, đúng tiến độ yêu cầu của trường.
 
 
 

@@ -9,15 +9,18 @@ pre: " <b> 1.8. </b> "
 
 ### Mục tiêu tuần 8:
 
-
+* Chờ nhận kết quả chấm điểm báo cáo thực tập từ trường.
+* Hoàn tất các thủ tục hành chính cuối cùng để kết thúc kỳ thực tập.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-|     |     |     |     |     |
+| 2-7 | - Chờ nhận kết quả chấm điểm báo cáo thực tập từ trường <br> - Hoàn tất các thủ tục hành chính cuối cùng để kết thúc kỳ thực tập | 10/08/2026 | 15/08/2026 | |
 
 
 ### Kết quả đạt được tuần 8:
+
+* Hoàn tất kỳ thực tập đúng thời hạn (15/08/2026).
 
 
 
