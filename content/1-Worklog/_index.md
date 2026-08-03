@@ -20,6 +20,6 @@ My internship ran for **8 weeks**, from **June 22, 2026** to **August 15, 2026**
 
 **Week 6:** [Finalizing the Workshop report, publishing 3 technical blog posts, revising the architecture diagrams](1.6-week6/)
 
-**Week 7:** [See details](1.7-week7/)
+**Week 7:** [Submitting the Workshop report and graduation internship report to the university](1.7-week7/)
 
-**Week 8:** [See details](1.8-week8/)
+**Week 8:** [Waiting for grading results and wrapping up the internship](1.8-week8/)

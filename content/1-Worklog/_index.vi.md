@@ -20,6 +20,6 @@ Kỳ thực tập của tôi kéo dài **8 tuần**, từ **22/06/2026** đến 
 
 **Tuần 6:** [Hoàn thiện báo cáo Workshop, đăng 3 bài blog kỹ thuật, chỉnh sửa lại diagram kiến trúc](1.6-week6/)
 
-**Tuần 7:** [Xem chi tiết](1.7-week7/)
+**Tuần 7:** [Nộp Workshop report và báo cáo thực tập tốt nghiệp cho trường](1.7-week7/)
 
-**Tuần 8:** [Xem chi tiết](1.8-week8/)
+**Tuần 8:** [Chờ nhận kết quả chấm điểm, hoàn tất thủ tục kết thúc thực tập](1.8-week8/)
