@@ -110,7 +110,7 @@ Theo phân công của chuyên gia doanh nghiệp hướng dẫn (anh Nguyễn G
 - Tự động hóa CI/CD với AWS CodePipeline/CodeBuild, thiết lập giám sát (CloudWatch Alarms/SNS) và các cơ chế production-hardening (mã hóa KMS, S3 Intelligent-Tiering, EventBridge cleanup, CSRF protection).
 - Biên soạn tài liệu workshop hướng dẫn triển khai lại toàn bộ hệ thống (Chương 5) phục vụ cộng đồng học tập.
 
-Riêng cá nhân em tập trung chính vào mảng Backend (FastAPI, Lambda), bảo mật hệ thống và biên soạn tài liệu kỹ thuật/workshop, trong khi các bạn cùng nhóm phụ trách các mảng khác của dự án (Backend, Frontend, nghiên cứu, thuyết trình).
+Riêng cá nhân em tập trung chính vào mảng Backend (FastAPI, Lambda), bảo mật hệ thống và biên soạn tài liệu kỹ thuật/workshop, trong khi các bạn cùng nhóm phụ trách các mảng khác của dự án (Backend, Frontend, nghiên cứu).
 
 ### Kết luận chương 1
 
