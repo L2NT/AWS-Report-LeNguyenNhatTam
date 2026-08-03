@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
+# KIẾN TRÚC BEDROCK AWS LANDING ZONE
+
 > *Bài viết dưới đây do bạn Phong trong nhóm thực hiện, được tính vào số lượng bài blog chung của cả nhóm (3 bài) theo quy định của chương trình FCAJ.*
 
 ![Sơ đồ kiến trúc Amazon Bedrock Baseline Architecture trong AWS Landing Zone](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2025/06/18/ARCHBLOG-1133-image-1-960x630.png)

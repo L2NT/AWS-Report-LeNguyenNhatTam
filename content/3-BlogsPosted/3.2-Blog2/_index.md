@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
+# AMAZON BEDROCK LANDING ZONE ARCHITECTURE
+
 > *The post below was written by teammate Phong, and counts toward the group's shared blog quota (3 posts) as required by the FCAJ program.*
 
 ![Amazon Bedrock Baseline Architecture Diagram in an AWS Landing Zone](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2025/06/18/ARCHBLOG-1133-image-1-960x630.png)
