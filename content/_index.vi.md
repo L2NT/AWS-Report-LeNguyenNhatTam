@@ -7,7 +7,7 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Lê Nguyễn Nhật Tâm
+&emsp; **Họ và tên:** Lê Nguyễn Nhất Tâm
 
 &emsp; **Số điện thoại:** 0868253404
 
@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 15/08/2026
 
-![Ảnh đại diện của Lê Nguyễn Nhật Tâm](images/avatar.png)
+![Ảnh đại diện của Lê Nguyễn Nhất Tâm](images/avatar.png)
 
 
 
