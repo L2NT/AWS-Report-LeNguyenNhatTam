@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-During my internship, I had the chance to attend 2 events in person. Each one was a memorable experience packed with new, useful knowledge, along with great swag and moments.
+During my internship, I had the chance to attend 3 events in person. Each one was a memorable experience packed with new, useful knowledge, along with great swag and moments.
 
 ### [Event 1 — Cloud Architect x Meet Up](4.1-Event1/)
 | | |
@@ -27,3 +27,14 @@ During my internship, I had the chance to attend 2 events in person. Each one wa
 | **Role** | Attendee |
 | **Content** | Closing demo day of a 24-hour hackathon — 4 teams pitched Agentic AI builds (food-ordering chatbot, SA architecture assistant, crowd monitoring, AML workflow engine), followed by a retrospective on lessons learned. |
 | **Outcome** | Picked up ideas on human-in-the-loop approval and Step Functions-style orchestration to consider for my own project's agent design. |
+
+---
+
+### [Event 3 — Agent Forge – Deepdive Day 2](4.3-Event3/)
+| | |
+|---|---|
+| **Date & Time** | 09:00, August 8, 2026 |
+| **Location** | Bitexco Financial Tower, Ho Chi Minh City |
+| **Role** | Attendee |
+| **Content** | A deep-dive workshop on Amazon Bedrock AgentCore at an advanced level (L300) — Memory, Evaluations, Observability — with a hands-on lab practiced directly on the platform. |
+| **Outcome** | Planning to apply AgentCore's Memory and Evaluations mechanisms to improve context retention and systematically measure response quality for the project's RAG chatbot. |

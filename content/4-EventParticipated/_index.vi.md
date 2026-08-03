@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong quá trình thực tập, em đã có cơ hội tham gia trực tiếp 2 events. Mỗi event đều là một trải nghiệm đáng nhớ với những kiến thức mới mẻ, bổ ích, cùng với đó là những món quà và khoảnh khắc rất tuyệt vời.
+Trong quá trình thực tập, em đã có cơ hội tham gia trực tiếp 3 events. Mỗi event đều là một trải nghiệm đáng nhớ với những kiến thức mới mẻ, bổ ích, cùng với đó là những món quà và khoảnh khắc rất tuyệt vời.
 
 ### [Event 1 — Cloud Architect x Meet Up](4.1-Event1/)
 | | |
@@ -27,4 +27,15 @@ Trong quá trình thực tập, em đã có cơ hội tham gia trực tiếp 2 e
 | **Vai trò** | Người tham dự |
 | **Nội dung** | Buổi demo day tổng kết hackathon 24 giờ — 4 đội pitch các sản phẩm Agentic AI (chatbot đặt món ăn, trợ lý kiến trúc cho SA, giám sát đám đông, hệ thống chống rửa tiền), kèm phần chia sẻ bài học kinh nghiệm. |
 | **Kết quả đạt được** | Học được ý tưởng về bước phê duyệt human-in-the-loop và mô hình điều phối kiểu Step Functions để cân nhắc áp dụng cho thiết kế agent của dự án tôi. |
+
+---
+
+### [Event 3 — Agent Forge – Deepdive Day 2](4.3-Event3/)
+| | |
+|---|---|
+| **Thời gian** | 09:00 ngày 08/08/2026 |
+| **Địa điểm** | Bitexco Financial Tower, Thành phố Hồ Chí Minh |
+| **Vai trò** | Người tham dự |
+| **Nội dung** | Buổi workshop đào sâu (deep-dive) về Amazon Bedrock AgentCore ở mức nâng cao (L300) — Memory, Evaluations, Observability — kèm hands-on lab thực hành trực tiếp trên nền tảng. |
+| **Kết quả đạt được** | Dự kiến áp dụng cơ chế Memory và Evaluations của AgentCore để cải thiện khả năng ghi nhớ ngữ cảnh và đo lường chất lượng phản hồi cho chatbot RAG của dự án. |
 
