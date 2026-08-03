@@ -33,7 +33,7 @@ pre: " <b> 18. </b> "
 
 *(thang điểm 10)*
 
-## II. ĐIỂM TỔNG KẾT
+## III. ĐIỂM TỔNG KẾT
 
 *(trung bình cộng 2 cột điểm trên, thang điểm 10)*
 

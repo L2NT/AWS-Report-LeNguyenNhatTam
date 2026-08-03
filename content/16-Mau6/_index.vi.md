@@ -26,7 +26,7 @@ pre: " <b> 16. </b> "
 - **Điện thoại:** 0868253404
 
 - **Chuyên gia doanh nghiệp:** Nguyễn Gia Hưng — Email: hunggia@amazon.com — Điện thoại: 0817870645
-- **Giảng viên hướng dẫn:** Phạm Thế Bảo — Email: .................. — Điện thoại: ..................
+- **Giảng viên hướng dẫn:** Phạm Thế Bảo — Email: ptbao@sgu.edu.vn — Điện thoại: 0908282400
 
 | Tuần | Nội dung thực tập<br>(do chuyên gia của doanh nghiệp giao) | Kết quả thực tập<br>(do chuyên gia của doanh nghiệp đánh giá) |
 | --- | --- | --- |

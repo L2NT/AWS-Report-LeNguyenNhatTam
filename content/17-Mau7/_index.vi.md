@@ -22,7 +22,7 @@ pre: " <b> 17. </b> "
 - **Lớp:** DCT1226
 - **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 15/08/2026
 - **Doanh nghiệp thực tập:** Công ty TNHH Amazon Web Services Việt Nam
-- **Địa chỉ doanh nghiệp:** ....................................................
+- **Địa chỉ doanh nghiệp:** Tầng 26, Tòa nhà Bitexco số 2 đường Hải Triều, phường Sài Gòn, TP. Hồ Chí Minh
 - **Chuyên gia doanh nghiệp hướng dẫn:** Nguyễn Gia Hưng
 
 ## I. ĐÁNH GIÁ VỀ QUÁ TRÌNH THỰC TẬP
