@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 7"
+title: "Nhật ký Tuần 7: Nộp báo cáo Workshop & Báo cáo thực tập tốt nghiệp"
 date: 2024-01-01
 weight: 1
 chapter: false

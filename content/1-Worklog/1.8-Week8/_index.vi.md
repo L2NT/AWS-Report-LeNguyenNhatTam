@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 8"
+title: "Nhật ký Tuần 8: Hoàn tất thủ tục & Kết thúc kỳ thực tập"
 date: 2024-01-01
 weight: 1
 chapter: false

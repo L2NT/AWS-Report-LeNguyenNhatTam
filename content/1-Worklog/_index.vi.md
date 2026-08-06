@@ -6,20 +6,15 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Kỳ thực tập của tôi kéo dài **8 tuần**, từ **22/06/2026** đến **15/08/2026**, theo chương trình First Cloud AI Journey (FCAJ). Xuyên suốt 8 tuần, tôi vừa học các dịch vụ AWS nền tảng, vừa áp dụng trực tiếp vào việc xây dựng **Smart Docs AI** — một chatbot hỏi-đáp tài liệu (RAG) chạy trên kiến trúc serverless của AWS. Dưới đây là tóm tắt từng tuần:
+Trang này tổng hợp nhật ký công việc (Worklog) được thực hiện trong 8 tuần thực tập (từ ngày **22/06/2026** đến ngày **15/08/2026**) theo chương trình First Cloud AI Journey (FCAJ). Xuyên suốt kỳ thực tập, công việc được triển khai song song giữa việc nghiên cứu các dịch vụ nền tảng AWS và áp dụng trực tiếp vào quá trình xây dựng hệ thống **Smart Docs AI** — nền tảng hỏi đáp và trích xuất tri thức tài liệu thông minh (RAG) vận hành trên kiến trúc Serverless của AWS.
 
-**Tuần 1:** [Làm quen AWS Cloud, IAM, VPC và chốt đề tài Smart Docs AI](1.1-week1/)
+### Danh sách các tuần thực hiện:
 
-**Tuần 2:** [Tìm hiểu S3, CloudFront, RDS, EC2 Auto Scaling, KMS và Cognito](1.2-week2/)
-
-**Tuần 3:** [Review công việc đồng đội, hoàn thiện kiến trúc tổng quan, phát hiện rủi ro multi-tenancy](1.3-week3/)
-
-**Tuần 4:** [Triển khai luồng đăng ký/xác thực, fix bug multi-tenancy, tự động dọn dẹp bằng EventBridge, thêm đăng nhập Google](1.4-week4/)
-
-**Tuần 5:** [Tăng cường giám sát với CloudWatch Alarms, tối ưu chi phí S3, siết bảo mật CSRF/KMS, thêm pytest vào CI/CD](1.5-week5/)
-
-**Tuần 6:** [Hoàn thiện báo cáo Workshop, đăng 3 bài blog kỹ thuật, chỉnh sửa lại diagram kiến trúc](1.6-week6/)
-
-**Tuần 7:** [Nộp Workshop report và báo cáo thực tập tốt nghiệp cho trường](1.7-week7/)
-
-**Tuần 8:** [Chờ nhận kết quả chấm điểm, hoàn tất thủ tục kết thúc thực tập](1.8-week8/)
+* **Tuần 1 (22/06/2026 - 27/06/2026):** [Nghiên cứu tổng quan AWS Cloud, IAM, VPC và lựa chọn đề tài Smart Docs AI](1.1-week1/)
+* **Tuần 2 (29/06/2026 - 04/07/2026):** [Nghiên cứu các dịch vụ S3, CloudFront, RDS, EC2 Auto Scaling, KMS và Cognito](1.2-week2/)
+* **Tuần 3 (06/07/2026 - 11/07/2026):** [Đánh giá công việc nhóm, hoàn thiện kiến trúc tổng quan và phát hiện rủi ro phân lập dữ liệu](1.3-week3/)
+* **Tuần 4 (13/07/2026 - 18/07/2026):** [Triển khai luồng xác thực, khắc phục lỗi phân lập dữ liệu và tích hợp đăng nhập Google](1.4-week4/)
+* **Tuần 5 (20/07/2026 - 25/07/2026):** [Tăng cường giám sát, tối ưu chi phí và củng cố bảo mật hệ thống](1.5-week5/)
+* **Tuần 6 (27/07/2026 - 01/08/2026):** [Hoàn thiện tài liệu Workshop, sơ đồ kiến trúc và biên soạn bài viết kỹ thuật](1.6-week6/)
+* **Tuần 7 (03/08/2026 - 08/08/2026):** [Nộp báo cáo Workshop và báo cáo thực tập tốt nghiệp](1.7-week7/)
+* **Tuần 8 (10/08/2026 - 15/08/2026):** [Hoàn tất thủ tục và kết thúc kỳ thực tập](1.8-week8/)
