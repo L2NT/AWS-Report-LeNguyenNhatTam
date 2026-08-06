@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Trang này tổng hợp nhật ký công việc (Worklog) được thực hiện trong 8 tuần thực tập (từ ngày **22/06/2026** đến ngày **15/08/2026**) theo chương trình First Cloud AI Journey (FCAJ). Xuyên suốt kỳ thực tập, công việc được triển khai song song giữa việc nghiên cứu các dịch vụ nền tảng AWS và áp dụng trực tiếp vào quá trình xây dựng hệ thống **Smart Docs AI** — nền tảng hỏi đáp và trích xuất tri thức tài liệu thông minh (RAG) vận hành trên kiến trúc Serverless của AWS.
+Trang này tổng hợp nhật ký công việc (Worklog) được thực hiện trong 8 tuần thực tập (từ ngày **22/06/2026** đến ngày **15/08/2026**) theo chương trình First Cloud AI Journey (FCAJ). Xuyên suốt kỳ thực tập, công việc được triển khai song song giữa việc nghiên cứu các dịch vụ nền tảng AWS và áp dụng trực tiếp vào quá trình làm hệ thống **Smart Docs AI** — nền tảng hỏi đáp tài liệu thông minh (RAG) vận hành trên kiến trúc Serverless của AWS.
 
 ### Danh sách các tuần thực hiện:
 
