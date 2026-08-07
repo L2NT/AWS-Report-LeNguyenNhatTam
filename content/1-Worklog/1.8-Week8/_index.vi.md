@@ -5,7 +5,7 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-**Thời gian:** Từ ngày 10/08/2026 đến ngày 15/08/2026
+Thời gian: Từ ngày 10/08/2026 đến ngày 15/08/2026
 
 ### Mục tiêu tuần 8:
 

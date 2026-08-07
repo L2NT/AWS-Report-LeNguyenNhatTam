@@ -10,7 +10,7 @@ pre: " <b> 1.4. </b> "
 * Triển khai flow đăng ký/xác thực và cơ chế tự phục hồi `ensure_user_profile()` đã phác thảo tuần trước.
 * Fix lỗi rò rỉ dữ liệu đa người dùng (multi-tenancy), lỗi lẫn session token và các lỗi khác đã phát hiện tuần trước.
 * Tự động hóa việc dọn dẹp tài khoản Cognito chưa xác thực bằng Amazon EventBridge.
-* Tích hợp tính năng "Đăng nhập bằng Google" cho **Smart Docs AI**.
+* Tích hợp tính năng "Đăng nhập bằng Google" cho Smart Docs AI.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
@@ -28,7 +28,7 @@ pre: " <b> 1.4. </b> "
 * Fix triệt để lỗi rò rỉ dữ liệu giữa các người dùng (multi-tenancy): tách riêng dữ liệu lưu trữ theo từng người dùng, đồng thời fix lỗi session lẫn giữa các tab.
 * Fix lỗi cập nhật thông tin cá nhân, lỗi 500 từ Backend bị báo nhầm thành CORS, lỗi file filter bị bỏ qua ở Self-RAG/Co-RAG, và lỗi lặp lịch sử chat.
 * Triển khai thành công EventBridge Scheduled Rule tự động dọn tài khoản Cognito chưa xác thực, chi phí gần như bằng 0.
-* Tích hợp thành công tính năng "Đăng nhập bằng Google" cho **Smart Docs AI**, kèm cơ chế tự liên kết (gộp) tài khoản Google vào tài khoản thường khi trùng email.
+* Tích hợp thành công tính năng "Đăng nhập bằng Google" cho Smart Docs AI, kèm cơ chế tự liên kết (gộp) tài khoản Google vào tài khoản thường khi trùng email.
 * Soạn thảo Blog 3 (Lambda Tenant Isolation Mode) và Blog 1 (EventBridge Scheduler) - xem chi tiết tại mục 3.3 và 3.1.
 
 

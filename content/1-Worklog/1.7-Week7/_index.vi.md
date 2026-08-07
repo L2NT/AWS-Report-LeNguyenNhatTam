@@ -5,7 +5,7 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-**Thời gian:** Từ ngày 03/08/2026 đến ngày 08/08/2026
+Thời gian: Từ ngày 03/08/2026 đến ngày 08/08/2026
 
 ### Mục tiêu tuần 7:
 
