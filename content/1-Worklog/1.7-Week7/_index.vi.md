@@ -16,7 +16,7 @@ pre: " <b> 1.7. </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | 2   | - Nộp Workshop report lên hệ thống | 03/08/2026 | 03/08/2026 | |
-| 3   | - Nộp báo cáo thực tập tốt nghiệp cho trường để chấm điểm, xin đóng dấu xác nhận (lấy mộc) từ công ty | 04/08/2026 | 04/08/2026 | |
+| 3-7   | - Nộp báo cáo thực tập tốt nghiệp cho trường để chấm điểm, xin đóng dấu xác nhận (lấy mộc) từ công ty | 04/08/2026 | 08/08/2026 | |
 
 
 ### Kết quả đạt được tuần 7:
