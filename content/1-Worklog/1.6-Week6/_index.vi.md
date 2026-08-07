@@ -18,7 +18,7 @@ pre: " <b> 1.6. </b> "
 | 3 | - Đăng Blog 1 (EventBridge Scheduler), Blog 3 (Lambda Tenant Isolation) lên nhóm Facebook AWS Study Group, đăng lần lượt từng bài và theo dõi phản hồi trong nhóm | 28/07/2026 | 28/07/2026 | <https://www.facebook.com/groups/awsstudygroupfcj> |
 | 4 | - Chỉnh sửa 4 sơ đồ kiến trúc (Storage Structure, Lambda Modules, CI/CD Pipeline, Cleanup Flow) trên draw.io, cập nhật sơ đồ CI/CD Pipeline cho đúng bước CodeBuild cả Frontend lẫn Backend (trước đó vẽ thiếu CodeBuild của Frontend) <br> - Đối chiếu các sơ đồ với các thành viên khác, gửi bản xem trước để họ xác nhận sơ đồ khớp với thực tế triển khai <br> - Bổ sung ảnh chụp test còn thiếu vào mục System Testing (5.5): chụp lại màn hình các test case còn thiếu ảnh (đăng nhập, tải tài liệu, chat RAG) | 29/07/2026 | 29/07/2026 | <https://l2nt.github.io/AWS-Report-LeNguyenNhatTam/5-workshop/5.1-workshop-overview/5.1.3--overall-aws-architecture/> |
 | 5 | - Rà soát và chỉnh sửa lại nội dung báo cáo tổng thể cho rõ ràng, nhất quán hơn: đọc lại các mục đã viết, sửa lỗi chính tả và diễn đạt, thống nhất định dạng giữa các phần | 30/07/2026 | 30/07/2026 | |
-| 6 | - Tiếp tục chỉnh sửa, bổ sung các phần nội dung báo cáo còn thiếu, build lại site (hugo --minify) để kiểm tra không phát sinh lỗi sau khi chỉnh sửa | 31/07/2026 | 31/07/2026 | |
+| 6 | - Tiếp tục chỉnh sửa, bổ sung các phần nội dung báo cáo còn thiếu | 31/07/2026 | 31/07/2026 | |
 | 7 | - Rà soát lại toàn bộ báo cáo lần cuối trước khi bước sang tuần nộp Workshop | 01/08/2026 | 01/08/2026 | |
 
 
