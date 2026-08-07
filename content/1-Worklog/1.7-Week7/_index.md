@@ -5,7 +5,7 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-**Duration:** From August 3, 2026 to August 8, 2026
+Duration: From August 3, 2026 to August 8, 2026
 
 ### Week 7 Objectives:
 
