@@ -7,7 +7,7 @@ pre: " <b> 1.4. </b> "
 ---
 ### Mục tiêu tuần 4:
 
-* Triển khai flow đăng ký/xác thực và cơ chế tự phục hồi `ensure_user_profile()` đã phác thảo tuần trước.
+* Triển khai flow đăng ký/xác thực và cơ chế tự phục hồi `ensure_user_profile()` đã lên thiết kế tuần trước.
 * Fix lỗi rò rỉ dữ liệu đa người dùng (multi-tenancy), lỗi lẫn session token và các lỗi khác đã phát hiện tuần trước.
 * Tự động hóa việc dọn dẹp tài khoản Cognito chưa xác thực bằng Amazon EventBridge.
 * Tích hợp tính năng "Đăng nhập bằng Google" cho Smart Docs AI.
