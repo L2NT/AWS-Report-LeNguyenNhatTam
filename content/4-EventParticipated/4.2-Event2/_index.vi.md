@@ -11,7 +11,7 @@ pre: " <b> 4.2. </b> "
 ### Mục Đích Của Sự Kiện
 
 - Tổng kết một hackathon quy mô lớn (FCAJ x Agentic AI Build Week) với nhiều đội thi (2K, Six Piller, One Team, Long & Co, và các đội khác)
-- Tạo sân khấu để các đội demo và pitch sản phẩm Agentic AI xây dựng trên nền tảng AWS
+- Tạo sân khấu để các đội demo và pitch sản phẩm Agentic AI làm trên nền tảng AWS
 - Chia sẻ những bài học "xương máu" từ 24 giờ làm hackathon — teamwork, kỹ năng pitching, và các câu chuyện kỹ thuật thực tế
 - Giúp người tham gia có dự án đẹp cho hồ sơ (CV) và kết nối với cộng đồng AWS Study Group
 
@@ -32,9 +32,9 @@ pre: " <b> 4.2. </b> "
 
 #### Long & Co – trợ lý AI cho Solution Architect
 - Giải quyết đúng nỗi đau của SA: phải thiết kế kiến trúc, dự toán chi phí và triển khai hệ thống trong thời gian cực ngắn (có khi chỉ một buổi tối), trong khi vẽ tay trên Draw.io và viết IaC thủ công tốn rất nhiều thời gian.
-- Luồng xử lý: yêu cầu bằng ngôn ngữ tự nhiên + tài liệu nội bộ → AI vẽ sơ đồ kiến trúc → tính chi phí AWS dự kiến → sinh code Terraform/CloudFormation → con người xem xét và duyệt → hệ thống tự động deploy.
+- Flow xử lý: yêu cầu bằng ngôn ngữ tự nhiên + tài liệu nội bộ → AI vẽ sơ đồ kiến trúc → tính chi phí AWS dự kiến → sinh code Terraform/CloudFormation → con người xem xét và duyệt → hệ thống tự động deploy.
 - Cái khó theo nhóm chia sẻ không nằm ở việc vẽ sơ đồ, mà ở việc quản lý context/memory của AI để kiến trúc luôn nhất quán với quy tắc nội bộ (ví dụ: Lambda phải nằm trong VPC), và validate output theo danh sách dịch vụ được phép dùng ở mỗi lần chạy.
-- Giữ phạm vi ở mức proof-of-concept có thể chứng minh được, với UI hiển thị từng bước để ban giám khảo theo dõi luồng suy luận của agent theo thời gian thực.
+- Giữ phạm vi ở mức proof-of-concept có thể chứng minh được, với UI hiển thị từng bước để ban giám khảo theo dõi flow suy luận của agent theo thời gian thực.
 
 #### Nhóm 2K – giám sát đám đông real-time
 - Pipeline: camera đẩy dữ liệu qua Amazon Kinesis Video Streams → container chạy trên AWS Fargate dùng YOLO để phát hiện người và ByteTrack để theo dõi (tránh đếm trùng hoặc bỏ sót) → dữ liệu mật độ lưu ở DynamoDB và S3.
@@ -58,7 +58,7 @@ pre: " <b> 4.2. </b> "
 - Dù thuộc các lĩnh vực rất khác nhau (đặt đồ ăn, kiến trúc cloud, computer vision, AML), điểm chung là các đội đều xuất phát từ một pain point thực tế thay vì chạy theo công nghệ trước.
 - Pattern agentic AI lặp lại nhiều lần: một lớp điều phối (như Step Functions) quản lý các agent chuyên trách, có bước con người duyệt (human-in-the-loop) trước khi làm gì rủi ro, và phải quản lý context/memory để output AI nhất quán.
 - Một hackathon dạy về teamwork và áp lực thời gian không kém gì kỹ thuật — nhiều lời khuyên hay nhất lại đến từ phần "chia sẻ điều gì đã sai" hơn là từ chính phần demo.
-- Phải biết điểm dừng — là người develop nên lúc nào cũng muốn thêm tính năng mới, nâng cấp, làm cho nó tốt hơn, nhưng thời gian thì luôn có hạn, nên biết khi nào nên ngừng lại cũng quan trọng không kém việc biết xây dựng tính năng đó.
+- Phải biết điểm dừng — là người develop nên lúc nào cũng muốn thêm tính năng mới, nâng cấp, làm cho nó tốt hơn, nhưng thời gian thì luôn có hạn, nên biết khi nào nên ngừng lại cũng quan trọng không kém việc biết làm tính năng đó.
 
 ### Ứng Dụng Vào Công Việc
 

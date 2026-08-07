@@ -29,7 +29,7 @@ Công ty tạo điều kiện về thời gian làm việc linh hoạt khi cần
 
 ### Một số câu hỏi khác
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-  Điều tôi hài lòng nhất là được tự tay xây dựng một sản phẩm hoàn chỉnh từ đầu đến cuối — từ lúc chỉ có ý tưởng RAG chatbot đến khi có một hệ thống chạy thật trên AWS với đầy đủ authentication, CI/CD và monitoring. Khi gặp bug khó như rò rỉ dữ liệu multi-tenancy, tôi tìm hiểu và nhận ra đây là vấn đề đã được cộng đồng AWS ghi nhận, có tài liệu và hướng giải quyết chính thức — việc đọc, đối chiếu và áp dụng đúng hướng giải quyết đó, rồi viết lại thành bài blog chia sẻ cho cộng đồng AWS Study Group, là trải nghiệm đáng nhớ nhất.
+  Điều tôi hài lòng nhất là được tự tay làm một sản phẩm hoàn chỉnh từ đầu đến cuối — từ lúc chỉ có ý tưởng RAG chatbot đến khi có một hệ thống chạy thật trên AWS với đầy đủ authentication, CI/CD và monitoring. Khi gặp bug khó như rò rỉ dữ liệu multi-tenancy, tôi tìm hiểu và nhận ra đây là vấn đề đã được cộng đồng AWS ghi nhận, có tài liệu và hướng giải quyết chính thức — việc đọc, đối chiếu và áp dụng đúng hướng giải quyết đó, rồi viết lại thành bài blog chia sẻ cho cộng đồng AWS Study Group, là trải nghiệm đáng nhớ nhất.
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
   Tôi nghĩ chương trình có thể tạo thêm cơ hội giao lưu, trao đổi giữa nhóm tôi với các nhóm thực tập sinh khác đang làm việc chung văn phòng (đến từ nhiều trường khác nhau), thay vì mỗi nhóm chỉ tập trung làm việc độc lập trong không gian riêng của mình.
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  

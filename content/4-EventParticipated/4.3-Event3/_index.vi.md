@@ -13,7 +13,7 @@ pre: " <b> 4.3. </b> "
 - Đào sâu (deep-dive) vào Amazon Bedrock AgentCore ở mức nâng cao (L300), tập trung vào 3 mảng cốt lõi: Memory, Evaluations, Observability
 - Giới thiệu đầy đủ các thành phần (components) của nền tảng AgentCore: Registry, Harness, Tools, Payments, Optimization, Policy
 - Kết hợp lý thuyết với hands-on lab để người tham dự tự tay thực hành ngay trong buổi học
-- Kết nối cộng đồng đang xây dựng agentic AI trên nền tảng AWS
+- Kết nối cộng đồng đang làm agentic AI trên nền tảng AWS
 
 ### Nội Dung Buổi Học
 

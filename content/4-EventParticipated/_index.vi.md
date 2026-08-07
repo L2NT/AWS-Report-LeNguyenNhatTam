@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong quá trình thực tập, em đã có cơ hội tham gia trực tiếp 3 events. Mỗi event đều là một trải nghiệm đáng nhớ với những kiến thức mới mẻ, bổ ích, cùng với đó là những món quà và khoảnh khắc rất tuyệt vời.
+Trong quá trình thực tập, tôi đã có cơ hội tham gia trực tiếp 3 events. Mỗi event đều là một trải nghiệm đáng nhớ với những kiến thức mới mẻ, bổ ích, cùng với đó là những món quà và khoảnh khắc rất tuyệt vời.
 
 ### [Event 1 — Cloud Architect x Meet Up](4.1-Event1/)
 | | |
@@ -15,7 +15,7 @@ Trong quá trình thực tập, em đã có cơ hội tham gia trực tiếp 3 e
 | **Địa điểm** | Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh |
 | **Vai trò** | Người tham dự |
 | **Nội dung** | Buổi gặp gỡ không chính thức giữa các cloud architect với 4 phần chia sẻ; ấn tượng nhất là phần giới thiệu AWS Security Agent và mẹo thi chứng chỉ AWS. |
-| **Kết quả đạt được** | Đã thêm mã hóa KMS cho DynamoDB và bước kiểm thử pytest vào pipeline CI/CD của dự án, lấy cảm hứng trực tiếp từ phần chia sẻ về bảo mật. |
+| **Kết quả đạt được** | Đã thêm mã hóa KMS cho DynamoDB và bước test pytest vào pipeline CI/CD của dự án, lấy cảm hứng trực tiếp từ phần chia sẻ về bảo mật. |
 
 ---
 
