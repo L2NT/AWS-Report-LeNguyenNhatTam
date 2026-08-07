@@ -27,7 +27,7 @@ pre: " <b> 1.5. </b> "
 
 * Rolled out 4 CloudWatch Alarms + SNS to proactively catch errors/performance issues instead of waiting on user reports.
 * Enabled S3 Intelligent-Tiering to optimize storage costs for user-uploaded documents.
-* Added 2-layer CSRF protection to the Google login flow, fully tested across 5 scenarios including a simulated attack.
+* Added 2-layer CSRF protection to the Google login flow, tested across 5 scenarios including a simulated attack.
 * Enabled KMS encryption on the DynamoDB user profiles table, with full audit trail via CloudTrail.
 * Added a pytest step to CodePipeline (`pre_build`) - a new quality/security gate before build & deploy.
 * Held a team meeting, reviewed work progress, and collaborated on fixing errors in the report among team members.
