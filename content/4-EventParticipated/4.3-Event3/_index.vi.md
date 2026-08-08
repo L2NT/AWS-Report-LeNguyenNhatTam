@@ -27,8 +27,13 @@ pre: " <b> 4.3. </b> "
 - Dùng AgentCore Evaluations để đo lường hiệu năng agent
 - Khám phá AgentCore Harness
 
+### Những Gì Học Được
+
+### Trải nghiệm trong event
+
 ### Kỳ Vọng Áp Dụng Vào Dự Án
 
 - Cân nhắc áp dụng cơ chế Memory của AgentCore cho phần RAG chatbot của dự án, để agent ghi nhớ được ngữ cảnh hội thoại xuyên suốt nhiều lượt hỏi-đáp thay vì xử lý từng câu hỏi độc lập.
-- Tìm hiểu AgentCore Evaluations như một cách đo lường chất lượng câu trả lời có hệ thống hơn, thay vì chỉ test thủ công như hiện tại.
-- Quan tâm đến Observability để debug rõ ràng hơn khi Co-RAG hoặc Self-RAG cho ra kết quả không như mong đợi.
+
+#### Một số hình ảnh khi tham gia sự kiện
+![Ảnh sự kiện 3](/images/4-EventParticipated/4.3-Event3/Event-08-08-2026.png)
