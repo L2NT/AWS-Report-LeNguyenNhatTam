@@ -13,11 +13,11 @@ pre: " <b> 4.3. </b> "
 - Hướng dẫn cách làm và triển khai hệ thống Agentic AI ở mức production-ready bằng Amazon Bedrock AgentCore
 - Đi sâu vào 3 feature của Day 2 gồm Memory, Observability và Evaluations
 - Giới thiệu các component mở rộng và kết hợp lý thuyết với hands-on để người tham dự tự cấu hình một agent cơ bản
-- Kết nối các thành viên trong cộng đồng AWS Study Group đang tìm hiểu và làm dự án về Agentic AI
 
 ### Danh Sách Diễn Giả
 
-- **Anh Nghĩa** và **anh Anh** – trình bày các nội dung về Amazon Bedrock AgentCore và hướng dẫn phần hands-on
+- **Anh Nghĩa** – trình bày phần lý thuyết về kiến trúc AgentCore và các khái niệm kỹ thuật
+- **Anh Hải Anh** – hướng dẫn hands-on, hỗ trợ setup môi trường và xử lý lỗi trong lúc làm lab
 
 ### Nội Dung Nổi Bật
 
@@ -57,19 +57,18 @@ AgentCore có 6 feature chính: Runtime, Identity, Gateway được trình bày 
 
 - Agent cần một lớp Memory riêng để không phải đưa toàn bộ lịch sử vào context window ở mỗi request, đồng thời có thể cá nhân hóa phản hồi theo từng user
 - Short-term memory phù hợp với raw message trong session hiện tại, còn long-term memory giữ lại insight cần dùng ở những lần trò chuyện sau
-- Observability không chỉ là xem log; cần kết hợp trace và metric để biết agent chậm hoặc lỗi ở model, tool hay hạ tầng
-- Chất lượng phản hồi nên được đo bằng Evaluations theo tiêu chí cụ thể và chạy lại sau mỗi lần chỉnh prompt hoặc tool, thay vì chỉ đọc vài câu trả lời rồi tự đánh giá
+- Observability không chỉ là xem log. Cần kết hợp trace và metric để biết agent chậm hoặc lỗi ở model, tool hay hạ tầng
+- Chất lượng phản hồi nên được đo bằng Evaluations theo tiêu chí cụ thể và chạy lại sau mỗi lần chỉnh prompt hoặc tool, không phải chỉ đọc vài câu trả lời rồi tự đánh giá
 - Phần AI core chỉ là một phần nhỏ của hệ thống; phần lớn công việc vẫn nằm ở software engineering như thêm tool, quản lý memory, phân quyền, theo dõi và tối ưu agent
 
 ### Ứng Dụng Vào Công Việc
 
-- Cân nhắc dùng Memory cho RAG chatbot để giữ ngữ cảnh xuyên suốt nhiều lượt hỏi-đáp, thay vì xử lý mỗi câu hỏi như một request độc lập
-- Tìm hiểu cách tách short-term và long-term memory để chỉ lưu những insight cần thiết, tránh đưa toàn bộ lịch sử chat vào prompt
+- Cần tìm hiểu cách tách short-term và long-term memory để chỉ lưu những insight cần thiết, tránh đưa toàn bộ lịch sử chat vào prompt
 - Có thể dùng Observability để theo dõi latency, token và lỗi trong RAG flow; dùng Evaluations để đo Correctness sau mỗi lần thay đổi prompt hoặc cách retrieval
 
 ### Trải nghiệm trong event
 
-Tôi tham gia trực tiếp Day 2 nhưng không có mặt ở Day 1, nên bị thiếu phần setup ban đầu. Trong lúc mọi người làm hands-on, tôi chủ yếu cài AgentCore CLI và CDK, chỉ hoàn tất bước chuẩn bị môi trường chứ chưa chạy được các bài lab. Tôi dự định xem lại video Day 1 trên YouTube rồi làm lại từ đầu để theo kịp flow của workshop. Phần tôi ấn tượng nhất là Memory vì khá sát với vấn đề giữ ngữ cảnh hội thoại trong RAG chatbot của project.
+Tôi tham gia trực tiếp Day 2 nhưng không có mặt ở Day 1, nên bị thiếu phần setup ban đầu. Vì vậy tôi chủ yếu cài AgentCore CLI và CDK, chỉ mới hoàn tất bước chuẩn bị môi trường chứ chưa làm các bài lab. Tôi dự định xem lại video Day 1 trên Youtube rồi làm lại từ đầu để theo kịp flow của workshop event. Phần tôi ấn tượng nhất là Memory vì nó khá sát với vấn đề giữ ngữ cảnh hội thoại trong RAG chatbot của project nhóm tôi làm.
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Ảnh sự kiện 3](/images/4-EventParticipated/4.3-Event3/Event-08-08-2026.png)
